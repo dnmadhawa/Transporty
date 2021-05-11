@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transporty</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<dv class="top-nav-bar container"><!-- top-nav-bar -->
+	<div class="logo-d"><!-- logo-d -->
+		<a class="logo" href="#"><img src="img/logo.png"></a>
+	</div><!-- /logo-d -->
+	<div class="login"><!-- login -->
+		<input type="button" name="login" value="Login">
+		<img src="img/user.png">
+	</div><!-- /login -->
+</dv><!-- /top-nav-bar -->
+
+<div class="nav-bar container"><!-- nav-bar -->
+	<ul class="manu"><!-- manu -->
+		<li><a href="#">Home</a></li>
+		<li><a href="#">All Schedule</a></li>
+		<li><a href="#">Service type</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">About Us</a></li>
+	</ul><!-- /manu -->
+	<div class="search-box"><!-- search-box -->
+		<a href=""><img src="img/search.png"></a>
+		<input type="input" name="search" placeholder="Search">
+	</div><!-- /search-box -->
+</div><!-- /nav-bar -->
+
+<div class="slider container" align="center"><!-- slider -->
+  	<img class="slide" src="img/banner1.jpg">
+  	<img class="slide" src="img/banner2.jpg">
+  	<img class="slide" src="img/banner2.jpg">
+
+  	<button class="slider-btn previous-btn" onclick="previous(-1)"><img src="img/previous.png"></button>
+  	<button class="slider-btn next-btn" onclick="next(1)"><img src="img/next.png"></button>
+</div><!-- /slider -->
+
+<div class="search-bus container"><!-- search-bus -->
+	<form>
+	<div class="search-col">
+		<div class="search-input">
+			<label>Departure</label>
+			<input type="text" name="departure">
+		</div>
+		<div class="search-input">
+			<label>Arrival</label>
+			<input type="text" name="arrival">
+		</div>
+		<div class="search-input">
+			<label>Date</label>
+			<input type="date" name="date">
+		</div>
+	</div>
+	<center>
+		<input class="bus-btn" type="submit" name="submit">
+	</center>
+	</form>
+</div><!-- /search-bus -->
+
+<div class="service-type container"><!-- service-type -->
+	<div class="st-header">
+		<h1>Service Type</h1>
+		<hr>
+	</div>
+	<div class="service-box">
+		<div class="box">
+			<h1>Normal</h1>
+			<div class="box">
+				
+			</div>
+		</div>
+	</div>
+</div><!-- /service-type -->
+
+<div class="footer container"><!-- service-type -->
+	<div class="footer">
+		<div class="box">
+			<h1>Normal</h1>
+			<div class="box">
+				
+			</div>
+		</div>
+	</div>
+</div><!-- /service-type -->
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
