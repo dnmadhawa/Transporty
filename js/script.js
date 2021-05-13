@@ -27,8 +27,8 @@ function showSlides(a) {
   }
 
   x[slideIndex-1].style.display = "block";  
-  a =slideIndex-1;
-  myTimer = setInterval(next, 5000,1);
+  a =slideIndex+1;
+  myTimer = setInterval(next, 10000,1);
 
 }
 
