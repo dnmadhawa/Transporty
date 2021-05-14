@@ -1,0 +1,123 @@
+.about_us_body{
+	background-color: white;
+	border: 1px solid black;
+	width: 1350px;
+
+}
+
+
+
+.image6 img{
+	width: 150px;
+	padding: 10px 300px;
+	
+}
+.heading h2{
+	padding-left:350px;
+	padding-bottom:30px;
+	font-size: 30px;
+    margin-left: 10px;
+    
+   
+}
+.welcome{
+	padding-left: 7px;
+}
+.banner img{
+	width: 700px;
+	height:800px;
+	border: 2px solid black;
+}
+.center p{
+  position: absolute;
+  top:50%;
+  left:2%;
+  font-size:30px;
+  background-color:white;
+  border: 2px solid black;
+
+}
+.text p{
+	position: absolute;
+	font-size:22px;
+	left:730px;
+	bottom:20px;
+	right: 5px;
+	background-color: white;
+	
+
+}
+.team h3{
+	font-size: 25px;
+	position: absolute;
+	left:1000px;
+    top:650px;
+    background-color: violet;
+
+	
+}
+.team .h3 u{
+	line-height: 2px;
+
+}
+.member1 h4{
+	position: absolute;
+	left: 850px;
+	top: 700px;
+}
+.image1 img{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 850px;
+	top:770px;  
+}
+.member2 h4{
+	position: absolute;
+	left: 1000px;
+	top: 700px;
+}
+.image2 img{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 1000px;
+	top: 770px;
+}
+.member3 h4{
+	position: absolute;
+	left: 1150px;
+	top: 700px;
+}
+.image3 img{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 1150px;
+	top: 770px;
+}
+.member4 h4{
+	position: absolute;
+	left: 920px;
+	top: 880px;
+}
+.image4 img{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 920px;
+	top: 950px;
+}
+.member5 h4{
+	position: absolute;
+	left: 1070px;
+	top: 880px;
+}
+
+.image5 img{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 1070px;
+	top: 950px;
+}
