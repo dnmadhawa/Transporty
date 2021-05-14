@@ -70,10 +70,13 @@ body{
 	padding-left: 30px;
 	border-radius: 20px;
 	border-color: transparent;
+	width: 200px;
+	transition: width 0.5s;
 }
 
 .search-box input:focus{
 	outline: none !important;
+	width: 250px;
 }
 
 .search-box input:visited{
