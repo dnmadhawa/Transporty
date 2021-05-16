@@ -1,27 +1,22 @@
-
 body{
 	background-color: #ecf0f1;
 	font-family: Arial, sans-serif;
 }
-
 .container{
 	width: 1400px;
 	display: block;
 	margin: auto;
 	clear: both;
 }
-
 .logo img{
 	width: 250px;
 	float: left;
 }
-
 .login{
 	display: flex;
 	float: right;
 	align-items: center;
 }
-
 .login input{
 	height: 30px;
 	margin: 0 10px;
@@ -31,16 +26,9 @@ body{
 	border-color: transparent;
 	width: 60px;  
 }
-
 .login img{
 	width: 50px;
 }
-
-.nav-bar{
-	background-color: #205cc1;
-	height: 50px;
-}
-
 .manu{
 	
 	float: left;
@@ -48,22 +36,19 @@ body{
 	padding-left: 0;
 	
 }
-
 .manu li{
 	display: inline;
 	padding: 10px;
 	color: #fff;
 }
-
 .manu a{
 	color: #ffff;
 	text-decoration: none;
-}	
-
+}
 .search-box{
 	padding: 10px;
 	float: right;
-}
+}	
 
 .search-box input{
 	position: relative;
@@ -74,30 +59,24 @@ body{
 	width: 200px;
 	transition: width 0.5s;
 }
-
 .search-box input:focus{
 	outline: none !important;
 	width: 250px;
 }
-
 .search-box input:visited{
 	border-color: transparent;
 }
-
 .search-box img{
 	position: absolute;
 	width: 15px;
 	transform: translate(8px,8px);
 	z-index: 1;
 }
-
-
 .slider{
 	position: relative;
 	margin: auto;
 	margin-top: 40px;
 }
-
 .slide{
 	display: none;
 	-webkit-animation: fadeIn 1.5s;
@@ -105,7 +84,6 @@ body{
 	width: 900px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 @-webkit-keyframes fadeIn {
     from { opacity: 0; }
       to { opacity: 1; }
@@ -114,53 +92,37 @@ body{
     from { opacity: 0; }
       to { opacity: 1; }
 }
-
 .slider-btn{
 	background-color: transparent;
 	border-color: transparent;
 	width: 50px;
 }
-
 .slider-btn img{	
 	width: 50px;
 }
-
 .previous-btn{
 	position: absolute;
 	transform: translate(-550px,-500%);
 }
-
 .next-btn{
 	position: absolute;
 	transform: translate(480px,-500%);
 }
-
-.search-bus{
-	margin-top: 40px;
-	padding: 30px 0;
-	background-color: #ffff;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
 .about_us_body{
-	
-	border: 1px solid black;
-	width: 1400px;
-	height: 1100px;
-	background-color: lightgray;
-
-
+	background-color: white;
+	border: 2px solid black;
+	width: 1500px;
+	height: 1350px;
+	padding-left: 30px;
 }
-
-
-
 .image6 img{
 	width: 280px;
 	height:280px; 
 	padding: 10px 300px;
+    top: 400px;
 	
 }
+
 .heading h2{
 	padding-left:350px;
 	padding-bottom:30px;
@@ -168,25 +130,20 @@ body{
     margin-left: 10px;
     font-variant: small-caps;
     position: absolute;
-    bottom: 110px;
-    
-   
-}
-.welcome{
-padding-left: 50px;
-padding-top: 10px;
+    top: 760px;
 
 }
-.banner img{
+.banner img
+{
 	width: 700px;
 	border: 2px solid black;
 	position: absolute;
-	bottom: 1000px;
+	top: 925px;
 
 }
 .center p{
   position: absolute;
-  top:50%;
+  top:1000px;
   left:7%;
   font-size:30px;
   background-color:white;
@@ -197,9 +154,10 @@ padding-top: 10px;
 	position: absolute;
 	font-size:22px;
 	left:750px;
-	bottom:0.01px;
+	top:900px;
 	right: 5px;
-	background-color: white;
+	padding: 0px 30px;
+	
 	
 
 }
@@ -207,70 +165,78 @@ padding-top: 10px;
 	font-size: 25px;
 	position: absolute;
 	left:1000px;
-    top:650px;
+    top:1250px;
     background-color: violet;
 
 	
 }
-.team .h3 u{
-	line-height: 2px;
-
-}
-
 .member1 h4{
 	position: absolute;
-	left: 850px;
-	top: 700px;
+	right:500px;
+	top: 1310px;
 }
 .image1 img{
+	width: 150px;
+	height: 150px;
 	position: absolute;
-	left: 850px;
-	top:770px;  
+	right: 410px;
+	top: 1380px;
 }
 .member2 h4{
 	position: absolute;
-	left: 1000px;
-	top: 700px;
+	right: 270px;
+	top: 1310px;
 }
 .image2 img{
+	width: 150px;
+	height: 150px;
 	position: absolute;
-	left: 1000px;
-	top: 770px;
+	right: 205px;
+	top: 1380px;
 }
-.member3 h4{
-	position: absolute;
-	left: 1150px;
-	top: 700px;
+.member3 h4
+{
+position: absolute;
+right: 85px;
+top: 1310px;
+
 }
 .image3 img{
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	position: absolute;
-	left: 1150px;
-	top: 770px;
+	right: 1px;
+	top: 1380px;
 }
 .member4 h4{
 	position: absolute;
-	left: 920px;
-	top: 880px;
+	right: 410px;
+	top: 1540px;
 }
 .image4 img{
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	position: absolute;
-	left: 920px;
-	top: 950px;
+	right: 330px;
+	top: 1600px;
 }
 .member5 h4{
 	position: absolute;
-	left: 1070px;
-	top: 880px;
+	right: 170px;
+	top: 1540px;
+}
+.image5 img{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	right: 120px;
+	top: 1600px;
 }
 
-.image5 img{
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	left: 1070px;
-	top: 950px;
-}
+
+
+
+
+
+
+
