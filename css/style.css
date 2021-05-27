@@ -40,8 +40,69 @@ body{
 	background-color: #2771ec;
 }
 
-.login img{
+.user-icon{
 	width: 50px;
+}
+
+.user-name img{
+	position: absolute;
+	width: 18px;
+	right: 0;
+}
+
+.user-name{
+	display: block;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 30px;
+	cursor: pointer;
+}
+
+#user-dropdown{
+	display: none;	
+}
+
+.user-dropdown{
+	position: absolute;
+	background-color: #ffff;
+	list-style: none;
+	width: 160px;
+	transform: translate(50px,80px);
+	z-index: 1;
+	padding: 0;
+}
+
+.login:hover #user-dropdown {
+	display: block;	
+	animation: fadeIn 0.5s;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+
+.user-dropdown a{
+	text-decoration: none;
+	color: #414141;
+}
+
+.user-dropdown li{
+	padding: 10px 10px 10px 20px;
+}
+
+.user-dropdown a:hover{
+	color: #1b65ea;
+}
+
+#logout{
+	border-top: 2px solid #aaaaaa;
 }
 
 .nav-bar{

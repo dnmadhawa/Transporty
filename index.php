@@ -8,15 +8,7 @@
 </head>
 <body>
 
-<dv class="top-nav-bar container"><!-- top-nav-bar -->
-	<div class="logo-d"><!-- logo-d -->
-		<a class="logo" href="#"><img src="img/logo.png"></a>
-	</div><!-- /logo-d -->
-	<div class="login"><!-- login -->
-		<input type="button" name="login" value="Login" onclick="location.href='login.php';">
-		<img src="img/user.png">
-	</div><!-- /login -->
-</dv><!-- /top-nav-bar -->
+<?php include 'header.php';?>
 
 <div class="nav-bar container"><!-- nav-bar -->
 	<ul class="manu"><!-- manu -->

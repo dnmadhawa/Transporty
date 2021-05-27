@@ -1,6 +1,4 @@
 
-document.getElementById("sh-date").max;
-
 var slideIndex = 1;
 showSlides(slideIndex);
 var myTimer = setInterval(next, 4000,1);
