@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<?php include 'header.php';?>
+<?php include_once 'header.php';?>
 
 <div class="slider container" align="center"><!-- slider -->
   	<img class="slide" src="img/banner/banner1.png">
@@ -94,7 +94,7 @@
 	</div>
 </div><!-- /service-type -->
 
-<?php include 'footer.php';?>
+<?php include_once 'footer.php';?>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
