@@ -1,17 +1,9 @@
-{
-	padding:0;
-	margin:0;
-	box-sizing:boder-box;
-	font-family:sans-serif;
-}
+
 body{
 	background-color:#A9A9A9;
-	background-size:cover;
 }
 .boarder{
 	border:2px solid black;
-	width:1000px;
-	height:800px;
 }
 
 div.center {
@@ -19,10 +11,10 @@ div.center {
   width: 700px;
   border: 2px solid black;
   padding: 50px;
-  margin: 5px;
+  margin: 50px auto;
 }
 .h2{
-	fon-size:30px;
+	font-size:30px;
 	text-align:center;
 	margin:40px 0;
 }
@@ -35,7 +27,7 @@ div.center {
 	transform:translate(-50%, -50%);
 	width:50px;
 	padding:20px;
-	border;1px solid #808080;
+	border: 1px solid #808080;
 }
 
 .select{
@@ -54,3 +46,8 @@ div.center {
    border-radius:5px;
    outline:none;
 }   
+
+.lable{
+	width: 300px;
+	float: left;
+}

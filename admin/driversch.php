@@ -1,7 +1,7 @@
 <html>
 <head><title>Transporty</title>
-<link rel="stylesheet" href="css/driversch.css">
-<link rel="stylesheet" herf="css/admin-style.css">
+<link rel="stylesheet" type="text/css" href="css/driversch.css">
+<link rel="stylesheet" type="text/css" href="css/admin-style.css">
 </head>
 <body>
 
@@ -13,7 +13,9 @@
 <hr>
 
 <form>
+  <div class="lable">
   <label for="Service Vehicle">Service Vehicle</label><!--section option-->
+  </div>
   <select name="Select_Vehicle" id="Select_Vehicle" placeholder="Select">
     <option value="Normal">Normal</option>
     <option value="Semi-Luxury">Semi-Luxury</option>
