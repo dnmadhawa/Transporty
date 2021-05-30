@@ -25,7 +25,7 @@
 			<li><a href="#"><img class="side-img" src="img/icon/dashboard.svg">Dashboard</a></li>
 			<li><a href="#"><img class="side-img" src="img/icon/bus.svg">Add Vahicle</a></li>
 			<li><a href="#"><img class="side-img" src="img/icon/calendar.svg">Schedule</a></li>
-			<li><a href="#"><img class="side-img" src="img/icon/gears.svg">Advanced</a></li>
+			<li><a href="#"><img class="side-img" src="img/icon/gears.svg">Account Settings</a></li>
 		</ul>
 	</div><!-- /side-nav -->
 </div>

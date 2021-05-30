@@ -119,6 +119,7 @@ body{
 	list-style: none;
 	display: flex;
 	flex-direction: column;
+	padding-left: 30px;
 }
 
 .side-nav li{
