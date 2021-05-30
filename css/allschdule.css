@@ -1,0 +1,125 @@
+body{
+	background-color: #ecf0f1;
+	font-family: Arial, sans-serif;
+}
+.boarder{
+	border:2px solid black;
+	width:900px;
+	height:700px;
+}
+
+.container{
+	width: 1400px;
+	display: block;
+	margin: auto;
+	clear: both;
+}
+.logo img{
+	width: 250px;
+	float: left;
+}
+.login{
+	display: flex;
+	float: right;
+	align-items: center;
+}
+.login input{
+	height: 30px;
+	margin: 0 10px;
+	background-color: #205cc1;
+	color: #fff;
+	border-radius: 5px;
+	border-color: transparent;
+	width: 60px;  
+}
+.login img{
+	width: 50px;
+}
+.nav-bar{
+	background-color: #205cc1;
+	height: 50px;
+}
+.manu{
+
+	float: left;
+	list-style: none;
+	padding-left: 0;
+
+}
+.manu li{
+	display: inline;
+	padding: 10px;
+	color: #fff;
+}
+.manu a{
+	color: #ffff;
+	text-decoration: none;
+}
+	  
+.search-box{
+	padding: 10px;
+	float: left;
+}
+
+.search-box input{
+	position: relative;
+	height: 24px;
+	padding-left: 30px;
+	border-radius: 20px;
+	border-color: transparent;
+	width: 200px;
+	transition: width 0.5s;
+}
+
+.search-box input:focus{
+	outline: none !important;
+	width: 250px;
+}
+
+.search-box input:visited{
+	border-color: transparent;
+}
+
+.search-box img{
+	position: absolute;
+	width: 15px;
+	transform: translate(8px,8px);
+	z-index: 1;
+}
+
+div.container {
+  background-color: lightgrey;
+  width:500px;
+  float:center;
+  word-spacing:2px 1px;
+  border: 5px solid black;
+  padding: 50px;
+  margin: 5px;
+}
+
+.search-input{
+	float:left;
+}
+
+th{
+	background:#808080;
+	padding:15px;
+	font-size:15px;
+	border:2px solid black;
+}
+table, td{
+	width:800px;
+	table-layout: fixed;
+	font-size:13px;
+	padding: 15px;
+	text-align:center;
+	border:2px solid black;
+	border-collapse:collapse;
+	background: #c0c0c0;
+	color:white;
+	font-weight:700;
+}
+table,td:hover{
+	background:#4682B4;
+}
+	
