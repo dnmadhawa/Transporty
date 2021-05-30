@@ -3,12 +3,12 @@
 <head>
 	<title>Transporty</title>
 	<link rel="shortcut icon" href="img/logo-icon.png">
-	<link rel="stylesheet" type="text/css" href="css/admin-style.css">
 	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="css/admin-style.css">
 </head>
 <body>
 
-<?php include_once 'sidebar.php' ?>
+<?php include_once 'sidebar.php'; ?>
 
 
 <div class="container">

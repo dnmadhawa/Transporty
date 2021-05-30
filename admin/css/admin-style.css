@@ -140,3 +140,35 @@ body{
 .container{
 	margin-left: 200px;
 }
+
+
+.search-box{
+	padding: 10px;
+	float: right;
+}
+
+.search-box input{
+	position: relative;
+	height: 24px;
+	padding-left: 30px;
+	border-radius: 20px;
+	border-color: #cccc;
+	width: 200px;
+	transition: width 0.5s;
+}
+
+.search-box input:focus{
+	outline: none !important;
+	width: 250px;
+}
+
+.search-box input:visited{
+	border-color: transparent;
+}
+
+.search-box img{
+	position: absolute;
+	width: 15px;
+	transform: translate(8px,8px);
+	z-index: 1;
+}
