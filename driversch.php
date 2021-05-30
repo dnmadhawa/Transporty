@@ -1,7 +1,7 @@
 <html>
 <head><title>Transporty</title>
-<link rel="stylesheet" href="css/driversch.css">
-<link rel="stylesheet" herf="css/admin-style.css">
+<link rel="stylesheet" type-text="css" href="css/driversch.css">
+<link rel="stylesheet" type-text="css" herf="css/admin-style.css">
 </head>
 <body>
 

@@ -50,4 +50,9 @@ div.center {
 .lable{
 	width: 300px;
 	float: left;
+	
+}
+select_button{
+     display:flex;
+	 flex-direction:row;
 }
