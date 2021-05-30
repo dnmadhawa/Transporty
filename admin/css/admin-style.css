@@ -1,0 +1,142 @@
+body{
+	background-color: #ecf0f1;
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+.header-nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #ffff;
+	padding: 10px 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo-d img{
+	width: 200px;
+}
+
+.login{
+	display: flex;
+	float: right;
+	align-items: center;
+}
+
+.login input{
+	height: 30px;
+	margin: 0 10px;
+	background-color: #205cc1;
+	color: #fff;
+	border-radius: 5px;
+	border-color: transparent;
+	width: 60px;  
+}
+
+.login input:hover{
+	background-color: #2771ec;
+}
+
+.user-icon{
+	width: 50px;
+}
+
+.user-name img{
+	position: absolute;
+	width: 18px;
+	right: 0;
+}
+
+.user-name{
+	display: block;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 30px;
+	cursor: pointer;
+}
+
+#user-dropdown{
+	display: none;	
+}
+
+.user-dropdown{
+	position: absolute;
+	background-color: #ffff;
+	list-style: none;
+	width: 160px;
+	transform: translate(50px,80px);
+	z-index: 1;
+	padding: 0;
+}
+
+.login:hover #user-dropdown {
+	display: block;	
+	animation: fadeIn 0.5s;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+
+.user-dropdown a{
+	text-decoration: none;
+	color: #414141;
+}
+
+.user-dropdown li{
+	padding: 10px 10px 10px 20px;
+}
+
+.user-dropdown a:hover{
+	color: #1b65ea;
+}
+
+#logout{
+	border-top: 2px solid #aaaaaa;
+}
+
+.side-nav{
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #205cc1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.side-nav ul{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.side-nav li{
+	padding: 20px 0px;
+}
+
+.side-img{
+	width: 20px;
+	margin-right: 10px;
+}
+
+.side-nav a{
+	display: flex;
+	color: #ffff;
+	text-decoration: none;
+	text-align: center;
+}
+
+.container{
+	margin-left: 200px;
+}
