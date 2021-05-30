@@ -4,7 +4,7 @@
 	<title>Transporty</title>
 	<link rel="shortcut icon" href="img/logo-icon.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/n-style.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 <body>
 
