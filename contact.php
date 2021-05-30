@@ -3,44 +3,29 @@
 <head>
 	<title>Contac us</title>
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 </head>
 <body>
-	<dv class="top-nav-bar container"><!-- top-nav-bar -->
-	<div class="logo-d"><!-- logo-d -->
-		<a class="logo" href="#"><img src="img/logo.png"></a>
-	</div><!-- /logo-d -->
-	<div class="login"><!-- login -->
-		<input type="button" name="login" value="Login">
-		<img src="img/user.png">
-	</div><!-- /login -->
-    </dv><!-- /top-nav-bar -->
-
-    <div class="nav-bar container"><!-- nav-bar -->
-	<ul class="manu"><!-- manu -->
-		<li><a href="#"><b>Home</b></a></li>
-		<li><a href="#"><b>All Schedule</b></a></li>
-		<li><a href="#"><b>Service type</b></a></li>
-		<li><a href="#">Contact</a></li>
-		<li><a href="#"><b>About Us</b></a></li>
-	</ul><!-- /manu -->
-	<div class="search-box"><!-- search-box -->
-		<a href=""><img src="img/search.png"></a>
-		<input type="input" name="search" placeholder="Search">
-	</div><!-- /search-box -->
-</div><!-- /nav-bar -->
+	<?php include 'header.php';?>
+	<br>
+	<br>
 
 <div class="slider container" align="center"><!-- slider -->
-  	<img class="slide" src="img/banner1.jpg">
-  	<img class="slide" src="img/banner2.jpg">
-  	<img class="slide" src="img/banner2.jpg">
+  	<img class="slide" src="img/banner/banner1.png">
+  	<img class="slide" src="img/banner/banner2.png">
+  	<img class="slide" src="img/banner/banner3.png">
+  	<img class="slide" src="img/banner/banner4.png">
+  	<img class="slide" src="img/banner/banner5.png">
+
 
   	<button class="slider-btn previous-btn" onclick="previous(-1)"><img src="img/previous.png"></button>
   	<button class="slider-btn next-btn" onclick="next(1)"><img src="img/next.png"></button>
 </div><!-- /slider -->
 
 <br>
-<div class="reach"><!--reach-->
+<br>
+<div class="reach" align="center"><!--reach-->
 	<center>
 	<h2>Reach Our Team</h2>
 	<p>We love questions and feedback_and we are always happy to help!<br>Here are some ways to contact us</p>
@@ -48,21 +33,17 @@
 </center>
 </div><!--reach-->
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
+<div class="ct-box">
 <div class="talk"><!--talk-->
 	<h4>Talk With Us</h4>
 	<p>Chat with our team to solve your problem.</p>
 
+    <div class="talk1"><!--talk-->
+    
 	<img src="img/phone22.png">
-    <p1>0112564260</p1>
+    <p>0112564260</p>
+    </div><!--talk-->
 
 
 </div><!--talk-->
@@ -70,23 +51,16 @@
 <div class="customer_support"><!--customer_support-->
 	<h4>Contact Customer Support</h4>
 	<p>We are waiting to help you and your team</p>
-	<button onclick="myFunction()">Contact Support</button>
+	<center>
+		<button onclick="myFunction()">Contact Support</button>
 
+    <p id="demo"></p>
+
+	</center>
 
 </div><!--customer_support-->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
+</div>
+<center>
 <div class="head"><!--head-->
 	<h3>Headquarters</h3>
 	<br>
@@ -125,10 +99,7 @@
 
 
 	</div><!--information-->
-	<br>
-	<br>
-	<br>
-	<br>
+	
 
 
 	<div class="map"><!--map-->
@@ -143,22 +114,14 @@
 
 	</div><!--map-->
 	
-
-
-
 </div><!--head-->
 
+</center>
 
 
+<?php include'footer.php'?>
 
-
-
-  
-
-
-
-
-
+<script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/contact.js"></script>
 </body>
 </html>

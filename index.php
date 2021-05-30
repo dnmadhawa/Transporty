@@ -9,14 +9,23 @@
 <body>
 
 <?php include 'header.php';?>
+<dv class="top-nav-bar container"><!-- top-nav-bar -->
+	<div class="logo-d"><!-- logo-d -->
+		<a class="logo" href="#"><img src="img/logo.png"></a>
+	</div><!-- /logo-d -->
+	<div class="login"><!-- login -->
+		<input type="button" name="login" value="Login">
+		<img src="img/user.png">
+	</div><!-- /login -->
+    </dv><!-- /top-nav-bar -->
 
-<div class="nav-bar container"><!-- nav-bar -->
+    <div class="nav-bar container"><!-- nav-bar -->
 	<ul class="manu"><!-- manu -->
-		<li><a href="#">Home</a></li>
-		<li><a href="#">All Schedule</a></li>
-		<li><a href="#">Service type</a></li>
+		<li><a href="#"><b>Home</b></a></li>
+		<li><a href="#"><b>All Schedule</b></a></li>
+		<li><a href="#"><b>Service type</b></a></li>
 		<li><a href="#">Contact</a></li>
-		<li><a href="#">About Us</a></li>
+		<li><a href="#"><b>About Us</b></a></li>
 	</ul><!-- /manu -->
 	<div class="search-box"><!-- search-box -->
 		<a href=""><img src="img/search.png"></a>

@@ -1,0 +1,51 @@
+body{
+	background-color: #ecf0f1;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	
+
+}
+
+
+.head h2{
+     padding: 10px;
+}
+.head hr{
+	color: solid black;
+	border: 3px solid black;
+}
+.content{
+	border:1px solid black;
+	background-color:lightblue;
+	margin: 20px;
+	padding: 0px 1px;
+
+}
+
+.content table,th,td{
+	border-style: groove;
+	
+}
+.content table td button{
+	
+	background-color: lightblue;
+	width: 80px;
+	height: 30px;
+}
+.content table{
+     width: 70%;
+     margin: 20px;
+     
+}
+.content tr{
+	height: 60px;
+}
+.content tr:nth-child(even){
+	background-color: white;
+}
+.content th{
+	background-color: lightblue;
+}
+
+
+
