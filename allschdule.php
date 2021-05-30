@@ -2,14 +2,14 @@
 <html>
 <head>
 	<title>Transporty</title>
+  <link rel="shortcut icon" href="img/logo-icon.png">
 	<link rel="stylesheet" href="css/allschdule.css">
-	<link rel="stylesheet" herf="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body><div class="boarder">
+<body>
 
-<?php include_once'header.php';
-?>
-
+<?php include_once 'header.php';?>
+<div class="boarder">
 <div class="search-bus container"><!-- search-bus -->
 	<div class="search-col">
 		<div class="search-input">
@@ -44,9 +44,9 @@
 	</center>
 </div><!-- /search-bus -->
 
-<h2>Bus Schedule For Colombo To Kegalla On 2021.03.20<h2>
+<h2>Bus Schedule For Colombo To Kegalla On 2021.03.20</h2>
 <hr>
-<table border="1">
+<table class="b-schedule" border="1">
 <tr>
   <th>Routes no</th>
   <th>Vehicle no</th>
@@ -96,9 +96,9 @@
    <td>45</td>
  </tr>
  </table> 
-    
-<php include'footer.php';
-?>
 </div>
+
+  
+<?php include_once'footer.php';?>
 </body>
 </html>

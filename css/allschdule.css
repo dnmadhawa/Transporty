@@ -6,24 +6,26 @@ body{
 	border:2px solid black;
 	width:900px;
 	height:700px;
+	margin: 30px auto;
 }
 
-.container{
+.boarder .container{
 	width: 1400px;
 	display: block;
 	margin: auto;
 	clear: both;
 }
-.logo img{
+
+.boarder .logo img{
 	width: 250px;
 	float: left;
 }
-.login{
+.boarder .login{
 	display: flex;
 	float: right;
 	align-items: center;
 }
-.login input{
+.boarder .login input{
 	height: 30px;
 	margin: 0 10px;
 	background-color: #205cc1;
@@ -32,36 +34,37 @@ body{
 	border-color: transparent;
 	width: 60px;  
 }
-.login img{
+.boarder .login img{
 	width: 50px;
 }
-.nav-bar{
+
+.boarder .nav-bar{
 	background-color: #205cc1;
 	height: 50px;
 }
-.manu{
+.boarder .manu{
 
 	float: left;
 	list-style: none;
 	padding-left: 0;
 
 }
-.manu li{
+.boarder .manu li{
 	display: inline;
 	padding: 10px;
 	color: #fff;
 }
-.manu a{
+.boarder .manu a{
 	color: #ffff;
 	text-decoration: none;
 }
 	  
-.search-box{
+.boarder .search-box{
 	padding: 10px;
 	float: left;
 }
 
-.search-box input{
+.boarder .search-box input{
 	position: relative;
 	height: 24px;
 	padding-left: 30px;
@@ -71,43 +74,48 @@ body{
 	transition: width 0.5s;
 }
 
-.search-box input:focus{
+.boarder .search-box input:focus{
 	outline: none !important;
 	width: 250px;
 }
 
-.search-box input:visited{
+.boarder .search-box input:visited{
 	border-color: transparent;
 }
 
-.search-box img{
+.boarder .search-box img{
 	position: absolute;
 	width: 15px;
 	transform: translate(8px,8px);
 	z-index: 1;
 }
 
-div.container {
+.boarder .container {
   background-color: lightgrey;
-  width:500px;
+  width:600px;
   float:center;
   word-spacing:2px 1px;
   border: 5px solid black;
   padding: 50px;
-  margin: 5px;
+  margin: 20px auto;
 }
 
-.search-input{
+.boarder .search-input{
 	float:left;
+	margin: 10px;
 }
 
-th{
+.b-schedule{
+	margin: 20px auto;
+}
+
+.b-schedule th{
 	background:#808080;
 	padding:15px;
 	font-size:15px;
 	border:2px solid black;
 }
-table, td{
+.b-schedule , td{
 	width:800px;
 	table-layout: fixed;
 	font-size:13px;
@@ -119,7 +127,7 @@ table, td{
 	color:white;
 	font-weight:700;
 }
-table,td:hover{
+.b-schedule ,td:hover{
 	background:#4682B4;
 }
 	

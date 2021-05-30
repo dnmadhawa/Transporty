@@ -38,12 +38,12 @@ body{
 }
 
 .user-icon{
-	width: 50px;
+	width: 40px;
 }
 
 .user-name img{
 	position: absolute;
-	width: 18px;
+	width: 15px;
 	right: 0;
 }
 
@@ -51,7 +51,7 @@ body{
 	display: block;
 	position: relative;
 	padding-left: 10px;
-	padding-right: 30px;
+	padding-right: 25px;
 	cursor: pointer;
 }
 

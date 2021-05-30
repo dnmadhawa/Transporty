@@ -4,6 +4,7 @@
 	<title>Transporty</title>
 	<link rel="shortcut icon" href="img/logo-icon.png">
 	<link rel="stylesheet" type="text/css" href="css/admin-style.css">
+	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
 </head>
 <body>
 
@@ -35,7 +36,27 @@
 
 
 <div class="container">
-	<h2>asdfafadfasd</h2>
+	<div class="con-body">
+		<h2>Dashboard</h2>
+		<hr>
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Vehicle ID</th>
+				<th>From - To</th>
+				<th>Bookrd Seat</th>
+				<th>Status</th>
+			</tr>
+			<tr>
+				<td>1234</td>
+				<td>ABC-1122</td>
+				<td>Colombo - Kandy</td>
+				<td>01.00a.m - 03.00a.m</td>
+				<td>32</td>
+				<td><button>Cancel</button></td>
+			</tr>
+		</table>
+	</div>
 </div>
 
 </body>
