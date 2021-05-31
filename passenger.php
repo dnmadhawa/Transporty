@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'inc/connection.php';
 
 if (isset($_POST['p_submit'])) {
@@ -8,7 +9,7 @@ if (isset($_POST['p_submit'])) {
     if (empty($errors)) {
         $p_email = mysqli_real_escape_string($connection, $_POST['p_email']);
         $p_password = mysqli_real_escape_string($connection, $_POST['p_password']);
-        $hashed_password = ($p_password);
+        $hashed_password = sha1($p_password);
 
         $query = "SELECT * FROM passenger
                  WHERE email = '{$p_email}'
@@ -20,7 +21,11 @@ if (isset($_POST['p_submit'])) {
         if ($result_set) {
 
             if (mysqli_num_rows($result_set) == 1) {
-                header('Location: index.php');
+
+                $user = mysqli_fetch_assoc($result_set);
+                $_SESSION['p_id'] = $user['id'];
+                $_SESSION['fname'] = $user['fname'];
+                header('Location: home.php');
 
             } else {
                 $errors[] = 'Invalid E-Mail/Password';

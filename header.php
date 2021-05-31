@@ -1,3 +1,8 @@
+<?php
+require_once('inc/connection.php');
+require_once('driver.php');
+?>
+
 <dv class="top-nav-bar container"><!-- top-nav-bar -->
 	<div class="logo-d"><!-- logo-d -->
 		<a class="logo" href="#"><img src="img/logo.png"></a>
@@ -5,11 +10,18 @@
 	<div class="login"><!-- login -->
 		<input type="hidden" name="login" value="Login" onclick="location.href='login.php';">
 		<img class="user-icon" src="img/user.png">
-		<span class="user-name">Administrator <img src="img/btn/down-arrow.svg" ></span>
+		<span class="user-name">
+			<?php 
+				echo $_SESSION['fname'];
+					if(isset($_SESSION['d_id'])) {
+							echo $_SESSION['fname'];
+						} else { echo 'User';}  
+					?>
+					<img src="img/btn/down-arrow.svg" ></span>
             <ul id="user-dropdown" class="user-dropdown">
-                <li><a href="">Account activities</a></li>
+                <li><a href="login.php">Account activities</a></li>
                 <li><a href="">Edit Profile</a></li>
-                <li id="logout"><a href="../logout.php">Logout</a></li>
+                <li id="logout"><a href="logout.php">Logout</a></li>
 
             </ul>
 	</div><!-- /login -->
