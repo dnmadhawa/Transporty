@@ -28,63 +28,63 @@
 			
 			<div class="seatview">
 				<div class="column1">
-					<button class="S" id="z1" onclick="seat()">1W</button>
-					<button class="S" id="z5">5W</button>
-					<button class="S" id="z9">9w</button>
-					<button class="S" id="z13">13W</button>
-					<button class="S" id="z17">17W</button>
-					<button class="S" id="z21">21W</button>
-					<button class="S" id="z25">25W</button>
-					<button class="S" id="z29">29W</button>
-					<button class="S" id="z33">33W</button>
-					<button class="S" id="z37">37W</button>
-					<button class="S" id="z41">41W</button>
+					<button onclick="seat('z1')" class="S" id="z1">1W</button>
+					<button onclick="seat('z5')" class="S" id="z5">5W</button>
+					<button onclick="seat('z9')" class="S" id="z9">9w</button>
+					<button onclick="seat('z13')" class="S" id="z13">13W</button>
+					<button onclick="seat('z17')" class="S" id="z17">17W</button>
+					<button onclick="seat('z21')" class="S" id="z21">21W</button>
+					<button onclick="seat('z25')" class="S" id="z25">25W</button>
+					<button onclick="seat('z29')" class="S" id="z29">29W</button>
+					<button onclick="seat('z33')" class="S" id="z33">33W</button>
+					<button onclick="seat('z37')" class="S" id="z37">37W</button>
+					<button onclick="seat('z41')" class="S" id="z41">41W</button>
 				</div>
 				
 				<div class="column2">
-					<button class="S" id="z2">2</button>
-					<button class="S" id="z6">6</button>
-					<button class="S" id="z10">10</button>
-					<button class="S" id="z14">14</button>
-					<button class="S" id="z18">18</button>
-					<button class="S" id="z22">22</button>
-					<button class="S" id="z26">26</button>
-					<button class="S" id="z30">30</button>
-					<button class="S" id="z34">34</button>
-					<button class="S" id="z38">38</button>
-					<button class="S" id="z42">42</button>
+					<button onclick="seat('z2')" class="S" id="z2">2</button>
+					<button onclick="seat('z6')" class="S" id="z6">6</button>
+					<button onclick="seat('z10')" class="S" id="z10">10</button>
+					<button onclick="seat('z14')" class="S" id="z14">14</button>
+					<button onclick="seat('z18')" class="S" id="z18">18</button>
+					<button onclick="seat('z22')" class="S" id="z22">22</button>
+					<button onclick="seat('z26')" class="S" id="z26">26</button>
+					<button onclick="seat('z30')" class="S" id="z30">30</button>
+					<button onclick="seat('z34')" class="S" id="z34">34</button>
+					<button onclick="seat('z38')" class="S" id="z38">38</button>
+					<button onclick="seat('z42')" class="S" id="z42">42</button>
 				</div>
 				
 				<div class="column3">
-					<button class="S W">43</button>
+					<button onclick="seat('z43')"class="S" id="z43">43</button>
 				</div>
 
 				<div class="column4">
-					<button class="S" id="z3">3</button>
-					<button class="S" id="z7">7</button>
-					<button class="S" id="z11">11</button>
-					<button class="S" id="z15">15</button>
-					<button class="S" id="z19">19</button>
-					<button class="S" id="z23">23</button>
-					<button class="S" id="z27">27</button>
-					<button class="S" id="z31">31</button>
-					<button class="S" id="z35">35</button>
-					<button class="S" id="z39">39</button>
-					<button class="S" id="z44">44</button>
+					<button onclick="seat('z3')" class="S" id="z3">3</button>
+					<button onclick="seat('z7')" class="S" id="z7">7</button>
+					<button onclick="seat('z11')" class="S" id="z11">11</button>
+					<button onclick="seat('z15')" class="S" id="z15">15</button>
+					<button onclick="seat('z19')" class="S" id="z19">19</button>
+					<button onclick="seat('z23')" class="S" id="z23">23</button>
+					<button onclick="seat('z27')" class="S" id="z27">27</button>
+					<button onclick="seat('z31')" class="S" id="z31">31</button>
+					<button onclick="seat('z35')" class="S" id="z35">35</button>
+					<button onclick="seat('z39')" class="S" id="z39">39</button>
+					<button onclick="seat('z44')" class="S" id="z44">44</button>
 				</div>
 				
 				<div class="column5">
-					<button class="S" id="z4">4W</button>
-					<button class="S" id="z8">8W</button>
-					<button class="S" id="z12">12W</button>
-					<button class="S" id="z16">16W</button>
-					<button class="S" id="z20">20W</button>
-					<button class="S" id="z24">24W</button>
-					<button class="S" id="z28">28W</button>
-					<button class="S" id="z32">32W</button>
-					<button class="S" id="z36">36W</button>
-					<button class="S" id="z40">40W</button>
-					<button class="S" id="z45">45W</button>
+					<button onclick="seat('z4')" class="S" id="z4">4W</button>
+					<button onclick="seat('z8')" class="S" id="z8">8W</button>
+					<button onclick="seat('z12')" class="S" id="z12">12W</button>
+					<button onclick="seat('z16')" class="S" id="z16">16W</button>
+					<button onclick="seat('z20')" class="S" id="z20">20W</button>
+					<button onclick="seat('z24')" class="S" id="z24">24W</button>
+					<button onclick="seat('z28')" class="S" id="z28">28W</button>
+					<button onclick="seat('z32')" class="S" id="z32">32W</button>
+					<button onclick="seat('z36')" class="S" id="z36">36W</button>
+					<button onclick="seat('z40')" class="S" id="z40">40W</button>
+					<button onclick="seat('z45')" class="S" id="z45">45W</button>
 				</div>
 			</div>
 		</div>
@@ -107,7 +107,7 @@
 					<input type="text" value="Luxury" readonly>
 					<input type="text" value="2021/10/30" readonly>
 					<input type="text" value="3.00 p.m" readonly>
-					<input type="text" value="1500.00" readonly>
+					<input id="price" type="text" value="1500.00" readonly>
 				</div>
 			</div>
 				
@@ -120,39 +120,25 @@
 	
 		<div class="calculation">
 		
-			<table>
+			<table id="t_data">
 	
 				<tr>
 				<th>Seat No</th>
 				<th>Fare</th>
 				<th>Remove</th>
 				</tr>
-				
-				<tr>
-				<td>5</td>
-				<td>LKR 1450.00</td>
-				<td>Delete</td>
-				</tr>
-				
-				<tr>
-				<td>33W</td>
-				<td>LKR 1450.00</td>
-				<td>Delete</td>
-				</tr>
-				
-				<tr>
-				<td>41W</td>
-				<td>LKR 1450.00</td>
-				<td>Delete</td>
-				</tr>
-				<tr>
+					
 			
 			</table>
 			
 			
 			<div class="total">
-				<p>Seats : 3</p>
-				<p>Sub Total : LKR 4350.00</p>
+				<div class="data">
+					<p>Seats :</p><p id="sval">0</p>
+				</div>
+				<div class="data">
+					<p>Sub Total : Rs.</p><p id="val">0.00</p>
+				</div>
 			</div>
 			
 			<button class="bookbut">Book Now</button>

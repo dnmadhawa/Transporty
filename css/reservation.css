@@ -185,3 +185,8 @@
 	box-shadow: 3px 3px 3px 3px #888888;
 }
 
+.data{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
