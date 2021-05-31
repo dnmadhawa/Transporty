@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
                 $_SESSION['p_id'] = $user['id'];
                 $_SESSION['fname'] = $user['fname'];
                 
-                header('Location: home.php');
+                header('Location: drive/dashboard.php');
 
             } else {
                 $errors[] = 'Invalid E-Mail/Password';

@@ -42,6 +42,10 @@ if (isset($_POST['submit'])) {
         if (mysqli_num_rows($result_set) == 1) {
             $errors[] = 'E-Mail address already registered';
         }
+    }
+
+    if($password != $c_password) {
+        $errors[] = 'Password Mismatch';
     }        
 
     if (empty($errors)) {

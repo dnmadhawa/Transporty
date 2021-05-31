@@ -43,8 +43,7 @@ if (isset($_POST['submit'])) {
                     <input type="email" name="email" id="email" placeholder="E-Mail" class="input_box2"
                         pattern="[a-z 0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
                     <br>
-                    <input type="password" name="password" id="pwd" placeholder="Password" class="input_box2"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,10}">
+                    <input type="password" name="password" id="pwd" placeholder="Password(Minimum 4 Charactors)" class="input_box2" minlength="4">
                     <br>
                     <input type="password" name="c_password" id="c_pwd" placeholder="Confirm Password"
                         class="input_box2">
