@@ -23,7 +23,7 @@ include 'passenger.php';
 
             <?php 
                 if (isset($errors) && !empty($errors)) {
-                    echo '<p class="error"> Invalid Username / Password </p>';
+                    echo '<script type="text/javascript"> alert ("Invalid Username or password ") </script>' ;
                 }
             ?>
                 
@@ -32,11 +32,10 @@ include 'passenger.php';
                     <h1>Driver Login</h1>
                 </center>
                 <input type="text" id="email" name="email" class="txt_box" placeholder="E-Mail" required>
-                <input type="text" id="pwd" name="password" class="txt_box" placeholder="Password" required>
+                <input type="password" id="pwd" name="password" class="txt_box" placeholder="Password" required>
                 <button type="submit" id="submit" name="submit">Login</button> 
                 <div class="links">
                     <center>
-                        <a href="">Forgot Password?</a><br>
                         <a href="">New user?</a>
                     </center>
                 </div>
@@ -46,7 +45,7 @@ include 'passenger.php';
                     <h1>Passenger Login</h1>
                 </center>
                 <input type="text" id="email" name="p_email" class="txt_box" placeholder="E-Mail" required>
-                <input type="text" id="pwd" name="p_password" class="txt_box" placeholder="Password" required>
+                <input type="password" id="pwd" name="p_password" class="txt_box" placeholder="Password" required>
                 <input type="submit" id="submit" value="Login" name="p_submit">
                 <center>
                     <a href="">Forgot Password?</a><br>

@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
         $result = mysqli_query($connection, $query);
 
         if ($result) {
-            header('Location: home.php');
+            header('Location: login.php');
         } else {
             $errors[] = 'Failed to add the user';
         }

@@ -21,6 +21,11 @@ if (isset($_POST['submit'])) {
         if ($result_set) {
 
             if (mysqli_num_rows($result_set) == 1) {
+
+                $user = mysqli_fetch_assoc($result_set);
+                $_SESSION['p_id'] = $user['id'];
+                $_SESSION['fname'] = $user['fname'];
+                
                 header('Location: home.php');
 
             } else {
