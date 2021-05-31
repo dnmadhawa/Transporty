@@ -25,11 +25,19 @@
 	<div class="search-header container" >
 		<h1>Plan Your Journey</h1>
 	</div>
+<<<<<<< Updated upstream
 	<form action="allschdule.php" method="GET">
 	<div class="search-col container">
 		<div class="search-input">
 			<label>Departure</label>
 			<select required name="departure">
+=======
+	<form method="GET" action="allschdule.php">
+	<div class="search-col container">
+		<div class="search-input">
+			<label>Departure</label>
+			<select name = "Departure">
+>>>>>>> Stashed changes
 				<option value="" selected disabled >Select Departure</option>
 				<option value="Colombo">Colombo</option>
 				<option value="Monaragala">Monaragala</option>
@@ -47,7 +55,11 @@
 		</div>
 		<div class="search-input">
 			<label>Arrival</label>
+<<<<<<< Updated upstream
 			<select required name="arrival">
+=======
+			<select name="Arrival">
+>>>>>>> Stashed changes
 				<option value="" selected disabled >Select Arrival</option>
 				<option value="Colombo">Colombo</option>
 				<option value="Monaragala">Monaragala</option>

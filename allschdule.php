@@ -1,5 +1,8 @@
 <?php require_once('inc/connection.php');?>
 <?php
+
+
+
 $schedule_list='';
 //Getting the list of activities
 
@@ -47,7 +50,11 @@ $schedule= mysqli_query($connection,$query);
 
 if($schedule)
 {
+<<<<<<< Updated upstream
  while($schedule1 =mysqli_fetch_assoc($schedule))
+=======
+ while($schdule1 =mysqli_fetch_assoc($schedule))
+>>>>>>> Stashed changes
  {
      $schedule_list .= "<tr>";
      $schedule_list .= "<td><a class='test' href='reservation.php?sch_id={$schedule1['sch_id']}'>{$schedule1['sch_id']}</a></td>";
@@ -84,7 +91,11 @@ if($schedule)
 <?php include_once 'header.php';?>
 <div class="boarder">
 <div class="search-bus container"><!-- search-bus -->
+<<<<<<< Updated upstream
   <form action="allschdule.php" method="GET">
+=======
+  <form method="GET" action="allschdule.php">
+>>>>>>> Stashed changes
 	<div class="search-col">
 		<div class="search-input">
 			<label>Departure</label>
@@ -124,7 +135,8 @@ if($schedule)
 			<label>Date</label>
 			<input type="date" name="date">
 		</div>
-	</div><br><br><br>
+	</div>
+  </form><br><br><br>
 	<center>
 		<input type="submit" name="submit">
 	</center>
