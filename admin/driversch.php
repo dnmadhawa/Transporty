@@ -1,3 +1,4 @@
+
 <html>
 <head><title>Transporty</title>
 <link rel="stylesheet" type="text/css" href="css/driversch.css">
@@ -12,17 +13,13 @@
 <h2>Schedule</h2>
 <hr>
 
-<form>
-  <div class="lable">
+<form action="add_sch.php" method="POST">
   <label for="Service Vehicle">Service Vehicle</label><!--section option-->
-  </div>
-  <select_button>
   <select name="Select_Vehicle" id="Select_Vehicle" placeholder="Select">
-    <option value="Normal">Normal</option>
-    <option value="Semi-Luxury">Semi-Luxury</option>
-    <option value="Luxury">Luxury</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
   </select><!--/selection option-->
-  <select_button>
   <br><br>
   <div class="lable">
   <label for="From">From</label>
@@ -34,7 +31,7 @@
 	<option value="Kegalla">Kegalla</option>
 	<option value="Badulla">Badulla</option>
   </select><!--/section option-->
-  <input type="Time" value="Time" id="Time" placeholder="Time">
+  <input type="Time" name="Time" value="Time" id="Time" placeholder="Time">
   <br><br>
   <div class="lable">
   <label for="To">To</label>
@@ -46,7 +43,7 @@
 	<option value="Kegalla">Kegalla</option>
 	<option value="Badulla">Badulla</option>
   </select><!--/section option-->
-  <input type="Time" value="Time" id="Time" placeholder="Time">
+  <input type="Time" name="Time" value="Time" id="Time" placeholder="Time">
   <br><br>
   <div class="lable">
    <label for="Date">Date</label>
@@ -56,10 +53,11 @@
   <div class="lable">
   <label for="Price per person">Price per person</label> 
   </div>
-  <input type="Price"  id="Price" placeholder="Price">
+  <input type="Price" name="Price" id="Price" placeholder="Price">
   <br><br>
-  
-  <input type="submit" value="Add"><!--subit button-->
+  <div class="lable">
+  <input type="submit" name="submit"value="Add"><!--subit button-->
+  </div>
  </form> 
 </div> <!--/border-->
 </div>

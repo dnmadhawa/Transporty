@@ -12,12 +12,12 @@
 <h2>Schedule</h2>
 <hr>
 
-<form>
+<form action="add_sch.php" method="POST">
   <label for="Service Vehicle">Service Vehicle</label><!--section option-->
   <select name="Select_Vehicle" id="Select_Vehicle" placeholder="Select">
-    <option value="Normal">Normal</option>
-    <option value="Semi-Luxury">Semi-Luxury</option>
-    <option value="Luxury">Luxury</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
   </select><!--/selection option-->
   <br><br>
   
