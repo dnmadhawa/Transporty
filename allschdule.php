@@ -3,7 +3,7 @@
 $schedule_list='';
 //Getting the list of activities
 
-$query="SELECT sch_id, depature ,d_time, arrival, a_time, price,status , sch_date FROM schedule  WHERE depature='Colombo' AND arrival='Kegalla'";
+$query="SELECT sch_id, depature ,d_time, arrival, a_time, price,status , sch_date FROM schedule";
 $schedule= mysqli_query($connection,$query);
 
 if($schedule)
