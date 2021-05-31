@@ -3,63 +3,32 @@
 <head>
 	<title>About us</title>
 	<link rel="stylesheet" type="text/css" href="css/transporty.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 
 </head>
 <body>
 
-<dv class="top-nav-bar container"><!-- top-nav-bar -->
-	<div class="logo-d"><!-- logo-d -->
-		<a class="logo" href="#"><img src="img/logo.png"></a>
-	</div><!-- /logo-d -->
-	<div class="login"><!-- login -->
-		<input type="button" name="login" value="Login">
-		<img src="img/user.png">
-	</div><!-- /login -->
-</dv><!-- /top-nav-bar -->
-<div class="nav-bar container"><!-- nav-bar -->
-	<ul class="manu"><!-- manu -->
-		<li><a href="#"><b>Home</b></a></li>
-		<li><a href="#"><b>All Schedule</b></a></li>
-		<li><a href="#"><b>Service type</b></a></li>
-		<li><a href="#"><b>Contact</b></a></li>
-		<li><a href="#">About Us</a></li>
-	</ul><!-- /manu -->
-	<div class="search-box"><!-- search-box -->
-		<a href=""><img src="img/search.png"></a>
-		<input type="input" name="search" placeholder="Search">
-	</div><!-- /search-box -->
-</div><!-- /nav-bar -->
-<div class="slider container" align="center"><!-- slider -->
-  	<img class="slide" src="img/banner1.jpg">
-  	<img class="slide" src="img/banner2.jpg">
-  	<img class="slide" src="img/banner2.jpg">
-
-  	<button class="slider-btn previous-btn" onclick="previous(-1)"><img src="img/previous.png"></button>
-  	<button class="slider-btn next-btn" onclick="next(1)"><img src="img/next.png"></button>
-</div><!-- /slider -->
-
+<?php include'header.php'?>
 <br>
 <br>
 <div class="about_us_body"><!--about_us_body-->
 
 <div class="topic"><!--topic-->
 			
-        <div class="image6"><!--image6-->
+    <div class="image6"><!--image6-->
         	
         	<img src="img/text-box.png">
         
-        </div><!--image6-->
-		<div class="heading"><!--heading-->
+     </div><!--image6-->
+
+	 <div class="heading"><!--heading-->
 			
 			<h2><b>WHO<br>WE ARE</b></h2>  
 		
-		</div><!--heading-->
+	 </div><!--heading-->
         
-        
-
-            
-		</div><!--topic-->
+</div><!--topic-->
 		<br>
 		<br>
         <div class="welcome"><!--welcome-->
@@ -89,10 +58,10 @@
      	  </div><!--text-->
      	  <div  class="team"><!--team-->
 		   		
+              
+		   		<h3>Our Team</h3>
 
-		   		<h3><b>Our Team</b></h3>
-
-		   		
+		   	  
 
 		  </div><!--team-->
 
@@ -145,51 +114,9 @@
         	
         </div><!--member5-->
          
-        
+  </div><!--about_us_body-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div><!--about_us_body-->
-
-
-
-
-
-
-
-
+  <?php include'footer.php'?>
 
 
 
