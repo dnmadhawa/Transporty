@@ -3,7 +3,7 @@
 $schedule_list='';
 //Getting the list of activities
 
-$query="SELECT v.v_id , v.b_number, s.d_time, s.a_time, v.s_type, v.seat_count FROM schedule s,vehicle v WHERE v.v_id=s.v_id AND s.depature='Colombo'";
+$query="SELECT sch_id, depature ,d_time, arrival, a_time, price,status , sch_date FROM schedule  WHERE depature='Colombo' AND arrival='Kegalla'";
 $schedule= mysqli_query($connection,$query);
 
 if($schedule)
@@ -11,12 +11,15 @@ if($schedule)
  while($schedule1 =mysqli_fetch_assoc($schedule))
  {
      $schedule_list .= "<tr>";
-     $schedule_list .= "<td>{$schedule1['v_id']}</td>";
-     $schedule_list .= "<td>{$schedule1['b_number']}</td>";
-     $schedule_list .= "<td>{$schedule1['d_time']}</td>";     
+     $schedule_list .= "<td>{$schedule1['sch_id']}</td>";
+     $schedule_list .= "<td>{$schedule1['depature']}</td>";
+     $schedule_list .= "<td>{$schedule1['d_time']}</td>";
+     $schedule_list .= "<td>{$schedule1['arrival']}</td>";
      $schedule_list .= "<td>{$schedule1['a_time']}</td>";     
-     $schdeule_list .= "<td>{$schedule1['s_type']}</td>";
-     $schdeule_list .= "<td>{$schedule1['seat_count']}</td>";
+     $schedule_list .= "<td>{$schedule1['price']}</td>";
+     $schedule_list .= "<td>{$schedule1['sch_date']}</td>";
+     $schedule_list .= "<td>{$schedule1['status']}</td>";     
+     
      
      
 
@@ -91,59 +94,6 @@ if($schedule)
 
 <h2>Bus Schedule For Colombo To Kegalla On 2021.03.20</h2>
 <hr>
-<table class="b-schedule" border="1">
-<tr>
-  <th>Routes no</th>
-  <th>Vehicle no</th>
-  <th>Vehicle name</th>
-  <th>Starting time-Ending time</th>
-  <th>Service Type</th>
-  <th>Avaliable seats</th>
-</tr>
-<tr>
-  <td>2/17</td>
-  <td>CAX 8256</td>
-  <td>Redwood express</td>
-  <td>6.15am-8.30am</td>
-  <td>Luxury</td>
-  <td>05</td>
-</tr>  
-<tr>
-  <td>2/87</td>
-  <td>KHV 5286</td>
-  <td>Horse rider</td>
-  <td>9.20am-11.35am</td>
-  <td>Normal</td>
-  <td>22</td>
-</tr> 
-<tr>
-   <td>2/452</td>
-   <td>VRT 8532</td>
-   <td>Queen</td>
-   <td>1.10pm-3.25pm</td>
-   <td>Semi-luxury</td>
-   <td>45</td>
-</tr> 
-  <tr>
-   <td>2/156</td>
-   <td>VRT 4532</td>
-   <td>Zee</td>
-   <td>6.10pm-8.25pm</td>
-   <td>Semi-luxury</td>
-   <td>45</td>
- </tr>
- <tr>
-   <td>2/52</td>
-   <td>CAX 8532</td>
-   <td>Rider</td>
-   <td>8.10pm-10.25pm</td>
-   <td>Normal</td>
-   <td>45</td>
- </tr>
- </table> 
-</div>
-
-
 
 
 <main>
@@ -151,12 +101,14 @@ if($schedule)
     
     <table class="schedulelist">
         <tr>
-            <th>Bus id</th>
-            <th>Bus number</th>
-            <th>startingtime</th>
-            <th>Endingtime</th>
-            <th>Service Type</th>
-            <th>Available seats </th>
+            <th>Schedule id</th>
+            <th>Depature</th>
+            <th>Depature time</th>
+            <th>Arrival</th>
+            <th>Arrival time</th>
+            <th>Price</th>
+            <th>Schedule Date</th>
+            <th>Status</th>
 
             </tr>
 
@@ -168,7 +120,7 @@ if($schedule)
 
 </main>
 
-
+</div>
 
 
   
