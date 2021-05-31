@@ -31,16 +31,36 @@
 			<label>Departure</label>
 			<select>
 				<option value="" selected disabled >Select Departure</option>
-				<option>Colombo</option>
-				<option>Colombo</option>
+				<option value="Colombo">Colombo</option>
+				<option value="Monaragala">Monaragala</option>
+				<option value="Kandy">Kandy</option>
+				<option value="Kegalla">Kegalla</option>
+				<option value="Badulla">Badulla</option>
+				<option value="kaluthara">kaluthara</option>
+				<option value="Galle">Galle</option>
+				<option value="Mathara">Mathara</option>
+				<option value="Madakalapuwa">Madakalapuwa</option>
+				<option value="Ampara">Ampara</option>
+				<option value="Gampaha">Gampaha</option>
+				<option value="Peradeniya">Peradeniya</option>
 			</select>
 		</div>
 		<div class="search-input">
 			<label>Arrival</label>
 			<select>
 				<option value="" selected disabled >Select Arrival</option>
-				<option>Colombo</option>
-				<option>Colombo</option>
+				<option value="Colombo">Colombo</option>
+				<option value="Monaragala">Monaragala</option>
+				<option value="Kandy">Kandy</option>
+				<option value="Kegalla">Kegalla</option>
+				<option value="Badulla">Badulla</option>
+				<option value="kaluthara">kaluthara</option>
+				<option value="Galle">Galle</option>
+				<option value="Mathara">Mathara</option>
+				<option value="Madakalapuwa">Madakalapuwa</option>
+				<option value="Ampara">Ampara</option>
+				<option value="Gampaha">Gampaha</option>
+				<option value="Peradeniya">Peradeniya</option>
 			</select>
 		</div>
 		<div class="search-input">

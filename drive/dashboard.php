@@ -1,3 +1,25 @@
+<?php  require_once('../inc/connection.php');
+
+	$data='' ;
+	$query = "SELECT * FROM `schedule` WHERE d_id = 1";
+
+	if ( $sql=mysqli_query($connection, $query)) {
+		 while($row =mysqli_fetch_assoc($sql)){
+		 	$data .= "<tr>";
+		 	$data .= "<td>{$row['sch_id']}</td>";
+		 	$data .= "<td>{$row['v_id']}</td>";
+		 	$data .= "<td>{$row['depature']} - {$row['arrival']}</td>";
+		 	$data .= "<td>{$row['sch_date']}</td>";
+		 	$data .= "<td>{$row['d_time']} - {$row['a_time']}</td>";
+		 	$data .= "<td> $scount </td>";
+		 	$data .= "</tr>";
+		 }
+	}else{
+		$data "Empty";
+	}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +44,7 @@
 				<th>From - To</th>
 				<th>Date</th>
 				<th>Time</th>
-				<th>Bookrd Seat</th>
+				<th>Booked Seat</th>
 				<th>Status</th>
 			</tr>
 			<tr>
