@@ -4,7 +4,7 @@ $activity_list='';
 
 //Getting the list of activities
 
-$query="SELECT s.sch_id,s.v_id,s.depature,s.d_time,s.arrival,s.a_time,s.date,s.price,s.sch_date,p.s_count FROM schedule s,payment p, reservation r  ORDER BY s.sch_id";
+$query="SELECT s.depature, s.d_time, s.arrival, s.a_time ,r.sch_id, r.res_id,r.receipt_number,r.res_date,s.price,s.sch_date,s.status, r.s_num FROM schedule s,reservation r WHERE r.sch_id = s.sch_id AND r.p_id=1 AND r.r_status=1 ORDER BY r.sch_id";
 $activity= mysqli_query($connection,$query);
 
 if($activity)
@@ -13,16 +13,18 @@ if($activity)
  {
      $activity_list .= "<tr>";
      $activity_list .= "<td>{$activity1['sch_id']}</td>";
-     $activity_list .= "<td>{$activity1['v_id']}</td>";
+     $activity_list .= "<td>{$activity1['res_id']}</td>";
      $activity_list .= "<td>{$activity1['depature']}</td>";
-     $activity_list .= "<td>{$activity1['d_time']}</td>";
-     $activity_list .= "<td>{$activity1['arrival']}</td>";
-     $activity_list .= "<td>{$activity1['a_time']}</td>";
-     $activity_list .= "<td>{$activity1['date']}</td>";
-     $activity_list .= "<td>{$activity1['s_count']}</td>";
+     $activity_list .= "<td>{$activity1['d_time']}</td>";     
+     $activity_list .= "<td>{$activity1['arrival']}</td>";     
+     $activity_list .= "<td>{$activity1['a_time']}</td>";     
+     $activity_list .= "<td>{$activity1['receipt_number']}</td>";
+     $activity_list .= "<td>{$activity1['res_date']}</td>";
      $activity_list .= "<td>{$activity1['price']}</td>";
      $activity_list .= "<td>{$activity1['sch_date']}</td>";
-     $activity_list .= "<td><button class=\"modify-activity.php?activity1_id={$activity1['id']}\">cancel</button></td>";
+     $activity_list .= "<td>{$activity1['s_num']}</td>";
+     $activity_list .= "<td>{$activity1['status']}</td>";
+     $activity_list .= "<td><a href=\"modify_activity.php?rid={$activity1['res_id']}\">cancel</a></td>";
      
      
      
@@ -60,19 +62,20 @@ if($activity)
 
 <main>
    <span><a href="add-activity.php"></a></span>
-
+    
     <table class="activitylist">
         <tr>
             <th>Sch Id</th>
-            <th>V Id</th>
             <th>Depature</th>
-            <th>Depature Time</th>
+            <th>Depature time</th>
             <th>Arrival</th>
-            <th>Arrival Time</th>
-            <th>Date</th>
-            <th>Book</th>
+            <th>Arrival time</th>
+            <th>Reservation ID</th>
+            <th>Receipt number</th>
+            <th>Reservation date</th>
             <th>price</th>
             <th>Schedule date</th>
+            <th>Seat number</th>
             <th>Status</th>
             
         </tr>
@@ -81,6 +84,7 @@ if($activity)
 <?php echo $activity_list;?>
 
 </table>
+
 
 </main>
 
