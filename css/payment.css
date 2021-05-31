@@ -1,0 +1,114 @@
+
+
+.headings
+{
+	font-size:40px;
+}
+
+
+
+.inputs input
+{
+	margin-top:10px;
+	margin-bottom:15px;
+	width:400px;
+	height:40px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding-left:20px;
+}
+
+.inputs select
+{
+	margin-top:10px;
+	margin-bottom:15px;
+	width:300px;
+	height:40px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding-left:10px;
+}
+
+.devider
+{
+	display:flex;
+	flex-direction:row;
+}
+
+.formbackgrnd
+{
+	background-color:yellow;
+	border:solid white;
+	margin:50px;
+
+}
+
+.abc
+{
+	padding-left:250px;
+	padding-bottom:50px;
+	padding-top:30px;
+}
+
+.buttons
+{
+	background-color:#205CC1;
+	color:white;
+	border: solid;
+	box-shadow: 3px 3px 3px 3px #888888;
+	cursor:pointer;
+	font-size:14px;
+	margin-top:20px;
+	width:200px;
+	height:40px;
+}
+
+.submit
+{
+	margin-left:20px;
+}
+
+.devide
+{
+	display:flex;
+	flex-direction:row;
+}
+
+.inputcolumn
+{
+	display:flex;
+	flex-direction:column;
+	
+}
+
+.inputcolumn
+{
+	padding-top:17px;
+	
+}
+
+.labelcolumn
+{
+	display:flex;
+	flex-direction:column;
+}
+
+.labelcolumn label
+{
+	padding:30px;
+}
+
+.formchanger
+{
+	height:900px;
+	width:auto;
+	overflow:hidden;
+	border:solid black;
+}
+
+#a
+{
+	left:500px;
+}
