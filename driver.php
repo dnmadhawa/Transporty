@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     if (empty($errors)) {
         $email = mysqli_real_escape_string($connection, $_POST['email']);
         $password = mysqli_real_escape_string($connection, $_POST['password']);
-        $hashed_password = ($password);
+        $hashed_password = sha1($password);
 
         $query = "SELECT * FROM driver
                  WHERE email = '{$email}'
@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
         if ($result_set) {
 
             if (mysqli_num_rows($result_set) == 1) {
-                header('Location: index.php');
+                header('Location: home.php');
 
             } else {
                 $errors[] = 'Invalid E-Mail/Password';

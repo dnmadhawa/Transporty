@@ -27,9 +27,15 @@ if (isset($_POST['submit'])) {
 
                     <?php
                         if (!empty($errors)) {
-                            echo 'Error';
+                            echo '<div class="msg">';
+                            echo '<b>Error</b><br>';
+                            foreach ($errors as $error) {
+                                echo $error,'<br>';
+                            }
+                            echo '</div>';
                         }
                     ?>
+
 
                     <input type="text" name="fname" id="fname" placeholder="First Name" class="input_box1">
                     <input type="text" name="lname" id="lname" placeholder="Last Name" class="input_box1">
@@ -41,7 +47,7 @@ if (isset($_POST['submit'])) {
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,10}">
                     <br>
                     <input type="password" name="c_password" id="c_pwd" placeholder="Confirm Password"
-                        class="input_box2" >
+                        class="input_box2">
                     <br>
                     <input type="tel" name="m_number" id="m_number" placeholder="Mobile Number" class="input_box2">
                     <br>

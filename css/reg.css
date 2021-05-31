@@ -64,11 +64,11 @@ h1 {
 }
 
 .form_items {
-    border: 2px solid #205cc1;
     border-radius: 20px;
     width: 500px;
-    height: 700px;
+    height: auto;
     margin: auto;
+    padding: 15px;
     background-color: white;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -99,4 +99,9 @@ img {
     height: 75px;
     margin-top: 20px;
     margin-bottom: 0;
+}
+
+.msg {
+    margin: 15px;
+    align-items: inherit;
 }
