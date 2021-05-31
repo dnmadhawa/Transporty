@@ -74,8 +74,8 @@
 				</div>
 				
 				<div class="column5">
-					<button onclick="seat('z4')" class="S" id="z4">4W</button>
-					<button onclick="seat('z8')" class="S" id="z8">8W</button>
+					<button onclick="seat('z4')"  class="S" id="z4">4W</button>
+					<button onclick="seat('z8')"  class="S" id="z8">8W</button>
 					<button onclick="seat('z12')" class="S" id="z12">12W</button>
 					<button onclick="seat('z16')" class="S" id="z16">16W</button>
 					<button onclick="seat('z20')" class="S" id="z20">20W</button>

@@ -46,7 +46,7 @@
 										<input type="text"     name="b_num"    placeholder="Bus Number">
 										<input type="number"   name="s_count"  placeholder ="Seat Count">
 
-										<input class="submit" name="submit" type="submit" value="Submit">
+										<input class="submit" name="submit" id="submit" onclick="colorchange()" type="submit" value="Submit">
 									</div>
 								</div>	
 
