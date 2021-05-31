@@ -48,7 +48,12 @@
 										<input type="text"     name="s_type"    placeholder="Service Type">
 										<input type= "text"    name="b_model"  placeholder="Bus Model">
 										<input type="text"     name="b_num"    placeholder="Bus Number">
-										<input type="number"   name="s_count"  placeholder ="Seat Count">
+										<select  class="selects" name="s_count" placeholder="Seat Count" >
+											<option  value="1"> 1 </option> 
+											<option  value="1"> 2 </option>
+											<option  value="1"> 3 </option>
+											<option  value="1"> 4 </option>
+										</select>
 
 										<input class="submit" name="submit" id="submit" onclick="colorchange()" type="submit" value="Submit">
 									</div>
