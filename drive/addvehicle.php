@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 
@@ -22,12 +23,15 @@
 		<div class="container">
 
 			<div class="backgrnd">
-					<h3 class="heading1">Add Vehicle</h3>
-					<hr>
+					
 
 					<div class="formborder" >
 							<form action="addvehicledatabase.php" method="POST" class="vehicleform">
 							
+
+							<h3 class="heading1">Add Vehicle</h3>
+							<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
 								<div class="forminfo">
 									<div class="label1">
 
@@ -40,7 +44,7 @@
 									
 									<div class="input1">
 
-										<input type= "text"  name="v_id"    placeholder ="Vehicle ID">
+										<input type= "text"    name="v_id"    placeholder ="Vehicle ID">
 										<input type="text"     name="s_type"    placeholder="Service Type">
 										<input type= "text"    name="b_model"  placeholder="Bus Model">
 										<input type="text"     name="b_num"    placeholder="Bus Number">

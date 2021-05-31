@@ -3,7 +3,8 @@
 .headings
 {
 	font-size:40px;
-	color: #ff0040;
+	color: blue;
+	text-shadow: 2px 2px black;
 }
 
 
@@ -46,6 +47,7 @@
 	margin-bottom: 70px;
 	margin-left: 70px;
 	margin-right: 70px;
+	box-shadow: 3px 3px 3px 3px #888888;
 
 }
 

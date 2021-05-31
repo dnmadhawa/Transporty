@@ -1,3 +1,26 @@
+<?php  require_once('inc/connection.php');
+
+
+	$query = "SELECT * FROM `schedule` WHERE sch_id = 11";
+
+	if ( $sql=mysqli_query($connection, $query)) {
+		$row =mysqli_fetch_assoc($sql);
+			$departure = "{$row['departure']}";
+		 	$arrival = "{$row['arrival']}";
+		 	$type = "{$row['type']}";
+		 	$date = "{$row['date']}";
+		 	$time = "{$row['time']}";
+		 	$fare = "{$row['fare']}";
+		 }
+
+
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 
 <html>
@@ -28,9 +51,9 @@
 			
 			<div class="seatview">
 				<div class="column1">
-					<button onclick="seat('z1')" class="S" id="z1">1W</button>
-					<button onclick="seat('z5')" class="S" id="z5">5W</button>
-					<button onclick="seat('z9')" class="S" id="z9">9w</button>
+					<button onclick="seat('z1')"  class="S" id="z1">1W</button>
+					<button onclick="seat('z5')"  class="S" id="z5">5W</button>
+					<button onclick="seat('z9')"  class="S" id="z9">9w</button>
 					<button onclick="seat('z13')" class="S" id="z13">13W</button>
 					<button onclick="seat('z17')" class="S" id="z17">17W</button>
 					<button onclick="seat('z21')" class="S" id="z21">21W</button>
@@ -42,8 +65,8 @@
 				</div>
 				
 				<div class="column2">
-					<button onclick="seat('z2')" class="S" id="z2">2</button>
-					<button onclick="seat('z6')" class="S" id="z6">6</button>
+					<button onclick="seat('z2')"  class="S" id="z2">2</button>
+					<button onclick="seat('z6')"  class="S" id="z6">6</button>
 					<button onclick="seat('z10')" class="S" id="z10">10</button>
 					<button onclick="seat('z14')" class="S" id="z14">14</button>
 					<button onclick="seat('z18')" class="S" id="z18">18</button>
@@ -60,8 +83,8 @@
 				</div>
 
 				<div class="column4">
-					<button onclick="seat('z3')" class="S" id="z3">3</button>
-					<button onclick="seat('z7')" class="S" id="z7">7</button>
+					<button onclick="seat('z3')"  class="S" id="z3">3</button>
+					<button onclick="seat('z7')"  class="S" id="z7">7</button>
 					<button onclick="seat('z11')" class="S" id="z11">11</button>
 					<button onclick="seat('z15')" class="S" id="z15">15</button>
 					<button onclick="seat('z19')" class="S" id="z19">19</button>
@@ -102,12 +125,12 @@
 				</div>
 				
 				<div class="bookingdetailsinput">
-					<input type="text" value="Kandy" readonly>
-					<input type="text" value="Colombo" readonly>
-					<input type="text" value="Luxury" readonly>
-					<input type="text" value="2021/10/30" readonly>
-					<input type="text" value="3.00 p.m" readonly>
-					<input id="price" type="text" value="1500.00" readonly>
+					<input type="text" name="departure" value="<?php echo $departure  ?>" readonly >
+					<input type="text" name="arrival" value=" <?php echo $arrival  ?> " readonly>
+					<input type="text" name="type" value=" <?php echo $type ?> " readonly>
+					<input type="text" name="date" value=" <?php echo $date ?> " readonly>
+					<input type="text" name="time" value=" <?php echo $time  ?> " readonly>
+					<input id="price"  name="fare" value=" <?php echo $fare ?> " readonly>
 				</div>
 			</div>
 				
