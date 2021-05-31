@@ -1,90 +1,17 @@
+
+
+
 body{
 	background-color: #ecf0f1;
 	font-family: Arial, sans-serif;
+	border-style: groove;
+    width: 1400px;
 }
-.container{
-	width: 1400px;
-	display: block;
-	margin: auto;
-	clear: both;
-}
-.logo img{
-	width: 250px;
-	float: left;
-}
-.login{
-	display: flex;
-	float: right;
-	align-items: center;
-}
-.login input{
-	height: 30px;
-	margin: 0 10px;
-	background-color: #205cc1;
-	color: #fff;
-	border-radius: 5px;
-	border-color: transparent;
-	width: 60px;  
-}
-.login img{
-	width: 50px;
-}
-.nav-bar{
-	background-color: #205cc1;
-	height: 50px;
-}
-.manu{
-	
-	float: left;
-	list-style: none;
-	padding-left: 0;
-	
-}
-.manu li{
-	display: inline;
-	padding: 10px;
-	color: #fff;
-}
-.manu a{
-	color: #ffff;
-	text-decoration: none;
-}	
-.search-box{
-	padding: 10px;
-	float: right;
-}
-
-.search-box input{
-	position: relative;
-	height: 24px;
-	padding-left: 30px;
-	border-radius: 20px;
-	border-color: transparent;
-	width: 200px;
-	transition: width 0.5s;
-}
-
-.search-box input:focus{
-	outline: none !important;
-	width: 250px;
-}
-
-.search-box input:visited{
-	border-color: transparent;
-}
-
-.search-box img{
-	position: absolute;
-	width: 15px;
-	transform: translate(8px,8px);
-	z-index: 1;
-}
-
 
 .slider{
 	position: relative;
-	margin: auto;
-	margin-top: 40px;
+	margin:60px auto;
+	
 }
 
 .slide{
@@ -107,12 +34,17 @@ body{
 .slider-btn{
 	background-color: transparent;
 	border-color: transparent;
-	width: 50px;
+	width: 40px;
 }
 
-.slider-btn img{	
+.slider-btn img:hover{
+    transition: 0.5s;	
 	width: 50px;
 }
+.slider-btn img{	
+	width: 40px;
+}
+
 
 .previous-btn{
 	position: absolute;
@@ -125,9 +57,12 @@ body{
 }
 .reach{
 	background-color: white;
-	width: 900px;
-	position: absolute;
-	right: 190px;
+	width: 905px;
+	margin: auto;
+	position: relative;
+	padding:10px 0px;
+	z-index: -1;
+
 }
 .reach h2{
 	font-family: serif;
@@ -136,14 +71,21 @@ body{
 	padding-bottom: 10px;
 }
 
+.ct-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 900px;
+	margin: auto;
+	margin-top: -10px;
+	z-index: 5;
+}
+
 .talk{
 	border-style: groove;
 	height: 200px;
 	width: 250px;
-	position: absolute;
-	right: 700px;
-	top: 805px;
-	background-color: white;
+	background-color: lightblue;
 
 }
 .talk h4{
@@ -153,25 +95,21 @@ body{
 .talk p{
 	padding: 0px 10px;
 }
-.talk img{
+.talk1 img{
 	width: 40px;
-	position: absolute;
-	top: 130px;
-	right: 195px;
+	margin: 20px;
 }
-.talk p1{
+
+.talk1 p{
+	display:inline-block;
 	position: absolute;
-	top: 140px;
-	right: 90px;
+	top: 860px;
 }
 .customer_support{
 	border-style: groove;
 	height: 200px;
 	width: 250px;
-	position: absolute;
-	right: 350px;
-	top: 805px;
-	background-color: white;
+	background-color: lightblue;
 }
 .customer_support h4{
 	padding: 0px 10px;
@@ -181,94 +119,93 @@ body{
 }
 
 .customer_support button{
-	position: absolute;
-	right: 75px;
-	top: 135px;
 	height: 30px;
 	background-color: dodgerblue;
+	margin: 20px;
 }
 .head{
 	border-style: groove;
 	width: 900px;
 	height: 400px;
-	position: absolute;
-	right: 190px;
 	background-color: white;
+	float: center;
+	margin: 20px;
 
 }
 .head h3{
-	position: absolute;
-	right: 700px;
+	float: left;
+	margin: 20px;
 }
 .information{
 	border-style: groove;
 	width: 300px;
 	height: 260px;
-	position: absolute;
-	right: 550px;
+	float: left;
 	background-color:lightgray;
-	
+	margin: 20px;
 
+}
+.gmail{
+	margin: 10px;
 }
 
 
 .gmail img{
 	width: 40px;
-	position: absolute;
-	right: 240px;
-	top: 15px;
-	filter:grayscale(100%)
+	float: left;
+	filter:grayscale(100%);
+
 	
 }
 .gmail p{
-	position: absolute;
-	right: 60px;
-	top: 12px;
+	display: inline-block;
+}
+.number{
+	margin: 10px;
 }
 .number img{
     width: 40px;
-    position: absolute;
-    right: 240px;
-    top: 80px;
+    float: left;
 
 }
 .number p{
-	position: absolute;
-	right: 130px;
-	top: 80px;
+	display: inline-block;
 }
+.location{
+	margin: 10px;
+}
+
 .location img{
 	width: 40px;
-	position: absolute;
-	right: 240px;
-	top: 145px;
+	float: left;
+	
+	
 }
 .location p{
-	position: absolute;
-	right: 120px;
-	top: 140px;
+	display: inline-block;
+	
+}
+.time{
+	margin: 10px;
 }
 .time img{
 	width: 40px;
-	position: absolute;
-	right: 240px;
-	top: 210px;
-
+	float: left;
+	
 }
 .time p{
-	position: absolute;
-	right: 153px;
-	top: 210px;
+	display: inline-block;
+	
 }
 .map img{
 	width: 470px;
-	position: absolute;
-	right: 50px;
-	top: 73px;
+	
 }
 .location1 img{
 	width: 20px;
 	position: absolute;
-	right: 200px;
-	top: 250px;
+	top: 1200px;
+	
 }
+
+
