@@ -90,7 +90,7 @@
 							<label>Old Password</label>
 						</div>
 						<div class="us-input">
-							<input type="text" name="o_password" id="oldpass">
+							<input type="password" name="o_password" id="oldpass" placeholder="***********">
 						</div>
 					</div>
 					<div class="us-data">
@@ -98,7 +98,7 @@
 							<label>New Password</label>
 						</div>
 						<div class="us-input">
-							<input type="text" name="n_password" id="npass">
+							<input type="password" name="n_password" id="npass" placeholder="***********"> 
 						</div>
 					</div>
 					<div class="us-data">
@@ -106,12 +106,12 @@
 							<label>Confirm Password</label>
 						</div>
 						<div class="us-input">
-							<input type="text" name="c_password" id="cpass">
+							<input type="password" name="c_password" id="cpass" placeholder="***********" onkeyup ="checkpass()">
 						</div>
 					</div>
 
 					<div class="us-data btn">
-						<input type="submit" name="submit" value="Update">
+						<input type="submit" name="submit" value="Update" id="submit-btn">
 					</div>
 				</form>
 			</div>
