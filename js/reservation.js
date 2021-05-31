@@ -3,7 +3,6 @@ function seat(x)
 	var color = document.getElementById(x).style.backgroundColor; 
 
 	if (color == "red" ) {
-		document.getElementById(x).style.backgroundColor  = "#ffff";
 
 
 	}else{
@@ -15,7 +14,7 @@ function seat(x)
         while (cell[i] != undefined) {
             val += parseFloat(cell[i].innerHTML);
             i++;
-        } //end while
+        } //end while 
         document.getElementById("val").innerHTML = parseFloat(val).toFixed(2);
         document.getElementById('sval').innerHTML = i;
 	}

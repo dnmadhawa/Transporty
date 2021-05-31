@@ -17,11 +17,11 @@
 
 <div class="nav-bar container"><!-- nav-bar -->
 	<ul class="manu"><!-- manu -->
-		<li><a href="#">Home</a></li>
-		<li><a href="#">All Schedule</a></li>
-		<li><a href="#">Service type</a></li>
-		<li><a href="#">Contact</a></li>
-		<li><a href="#">About Us</a></li>
+		<li><a href="home.php">Home</a></li>
+		<li><a href="allschdule.php">All Schedule</a></li>
+		<li><a href="servicetype.php">Service type</a></li>
+		<li><a href="contact.php">Contact</a></li>
+		<li><a href="about_us.php">About Us</a></li>
 	</ul><!-- /manu -->
 	<div class="search-box"><!-- search-box -->
 		<a href=""><img src="img/search.png"></a>
