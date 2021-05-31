@@ -2,9 +2,9 @@
 <?php  require_once('inc/connection.php');
 
 
-	if(!isset($_SESSION['d_id'])) {
-		header("Location:../login.php");
-	}
+	// if(!isset($_SESSION['d_id'])) {
+	// 	header("Location:../login.php");
+	// }
 							
 
 
