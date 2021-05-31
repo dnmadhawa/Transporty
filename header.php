@@ -1,7 +1,4 @@
-<?php
-require_once('inc/connection.php');
-require_once('driver.php');
-?>
+<?php session_start();?>
 
 <dv class="top-nav-bar container"><!-- top-nav-bar -->
 	<div class="logo-d"><!-- logo-d -->
@@ -9,14 +6,14 @@ require_once('driver.php');
 	</div><!-- /logo-d -->
 	<div class="login"><!-- login -->
 		<?php 
-					if(!isset($_SESSION['d_id'])) {
+					if(!isset($_SESSION['p_id'])) {
 							echo "<a href='login.php'><input type='button' name='login' value='Login' href='login.php'></a>";
 						}
 						?>
 		<img class="user-icon" src="img/user.png">
 		<span class="user-name">
 			<?php 
-					if(isset($_SESSION['d_id'])) {
+					if(isset($_SESSION['p_id'])) {
 							echo $_SESSION['fname'];
 							echo '	<img src="img/btn/down-arrow.svg" ></span><ul id="user-dropdown" class="user-dropdown"><li><a href="login.php">Account activities</a></li><li id="logout"><a href="logout.php">Logout</a></li></ul>';
 						} 

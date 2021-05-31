@@ -1,3 +1,4 @@
+
 <?php
 include 'driver.php';
 include 'passenger.php';
@@ -48,7 +49,6 @@ include 'passenger.php';
                 <input type="password" id="pwd" name="p_password" class="txt_box" placeholder="Password" required>
                 <input type="submit" id="submit" value="Login" name="p_submit">
                 <center>
-                    <a href="">Forgot Password?</a><br>
                     <a href="reg.php">New user?</a>
                 </center>
             </form>

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <div class="nav-bar">
 	<div class="header-nav">
 		 <div class="logo-d"><!-- logo-d -->
