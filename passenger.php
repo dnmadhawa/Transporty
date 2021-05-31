@@ -1,5 +1,4 @@
 <?php
-session_start();
 include 'inc/connection.php';
 
 if (isset($_POST['p_submit'])) {
@@ -23,8 +22,6 @@ if (isset($_POST['p_submit'])) {
             if (mysqli_num_rows($result_set) == 1) {
 
                 $user = mysqli_fetch_assoc($result_set);
-                $_SESSION['p_id'] = $user['id'];
-                $_SESSION['fname'] = $user['fname'];
                 header('Location: home.php');
 
             } else {
