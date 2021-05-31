@@ -31,11 +31,11 @@
 	<?php 
 	if (isset($_GET['error'])) {
 		$a = $_GET['error'];
-		if ($a == 0 ) {
+		if ($a == 1) {
 			echo "<div class='success'> Password change successful </div>";
 		}
-		if ($a == 1 ) {
-			echo "<div class='error'> Password change successful </div>";
+		if ($a == 0 ) {
+			echo "<div class='error'> Password change not successful </div>";
 		}
 	}
 	?>

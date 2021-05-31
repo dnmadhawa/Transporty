@@ -1,16 +1,16 @@
 <?php  require_once('inc/connection.php');
+	
+	$sch_id = $_GET['sch_id'];
 
-
-	$query = "SELECT * FROM `schedule` WHERE sch_id = 11";
+	$query = "SELECT * FROM `schedule` WHERE sch_id = $sch_id";
 
 	if ( $sql=mysqli_query($connection, $query)) {
 		$row =mysqli_fetch_assoc($sql);
-			$departure = "{$row['departure']}";
+			$departure = "{$row['depature']}";
 		 	$arrival = "{$row['arrival']}";
-		 	$type = "{$row['type']}";
-		 	$date = "{$row['date']}";
-		 	$time = "{$row['time']}";
-		 	$fare = "{$row['fare']}";
+		 	$date = "{$row['sch_date']}";
+		 	$time = "{$row['d_time']}";
+		 	$fare = "{$row['price']}";
 		 }
 
 
@@ -118,7 +118,6 @@
 				<div class="bookingdetailslabel">
 					<label>Departure</label>
 					<label>Arrival</label>
-					<label>Type</label>
 					<label>Date</label>
 					<label>Time</label>
 					<label>Fare</label>
@@ -127,7 +126,6 @@
 				<div class="bookingdetailsinput">
 					<input type="text" name="departure" value="<?php echo $departure  ?>" readonly >
 					<input type="text" name="arrival" value=" <?php echo $arrival  ?> " readonly>
-					<input type="text" name="type" value=" <?php echo $type ?> " readonly>
 					<input type="text" name="date" value=" <?php echo $date ?> " readonly>
 					<input type="text" name="time" value=" <?php echo $time  ?> " readonly>
 					<input id="price"  name="fare" value=" <?php echo $fare ?> " readonly>
@@ -164,7 +162,7 @@
 				</div>
 			</div>
 			
-			<button class="bookbut">Book Now</button>
+			<a href="payment.php"><button class="bookbut">Book Now</button></a>
 		</div>
 		
 	</div>

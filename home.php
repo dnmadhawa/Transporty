@@ -25,11 +25,11 @@
 	<div class="search-header container" >
 		<h1>Plan Your Journey</h1>
 	</div>
-	<form>
+	<form action="allschdule.php" method="GET">
 	<div class="search-col container">
 		<div class="search-input">
 			<label>Departure</label>
-			<select>
+			<select required name="departure">
 				<option value="" selected disabled >Select Departure</option>
 				<option value="Colombo">Colombo</option>
 				<option value="Monaragala">Monaragala</option>
@@ -47,7 +47,7 @@
 		</div>
 		<div class="search-input">
 			<label>Arrival</label>
-			<select>
+			<select required name="arrival">
 				<option value="" selected disabled >Select Arrival</option>
 				<option value="Colombo">Colombo</option>
 				<option value="Monaragala">Monaragala</option>
@@ -69,7 +69,7 @@
 		</div>
 	</div>
 	<center>
-		<input class="bus-btn" type="submit" name="Search" value ="Search for a schedule">
+		<input class="bus-btn" type="submit" name="submit" value ="submit">
 	</center>
 	</form>
 </div><!-- /search-bus -->
