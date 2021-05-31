@@ -5,47 +5,42 @@ body{
 	
 
 }
-
-
-.head h2{
-     padding: 10px;
-}
 .head hr{
-	color: solid black;
-	border: 3px solid black;
+	border:3px solid black;
+
 }
-.content{
-	border:1px solid black;
-	background-color:lightblue;
-	margin: 20px;
-	padding: 0px 1px;
+.activitylist tr:nth-child(odd){
+	background-color: lightblue;
 
 }
 
-.content table,th,td{
+main{
+	width: 1000px;
+	margin: 30px auto;
+
+}
+main h1{
+	margin-bottom: 20px;
+	font-size: 50px;
+}
+main h1 span{
+	font-size: 20px;
+}
+table.activitylist{
+	width: 1000px;
 	border-style: groove;
-	
-}
-.content table td button{
-	
-	background-color: lightblue;
-	width: 80px;
-	height: 30px;
-}
-.content table{
-     width: 70%;
-     margin: 20px;
-     
-}
-.content tr{
-	height: 60px;
-}
-.content tr:nth-child(even){
-	background-color: white;
-}
-.content th{
-	background-color: lightblue;
-}
 
+}
+table.activitylist th{
+    background-color: lightblue;
+    width: 50px;
+}
+table.activitylist th,table.activitylist td{
+	padding: 10px;
+	border-style: groove;
 
+}
+table.activitylist td button{
+	background-color: lightblue
+}
 
