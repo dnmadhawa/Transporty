@@ -1,5 +1,8 @@
 <?php  require_once('inc/connection.php');
 
+if (!isset($_SESSION['d_id'])){
+	header('Location: index.php');
+}
 
 	$passid = 1;
 	

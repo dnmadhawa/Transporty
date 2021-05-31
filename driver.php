@@ -23,8 +23,8 @@ if (isset($_POST['submit'])) {
             if (mysqli_num_rows($result_set) == 1) {
 
                 $user = mysqli_fetch_assoc($result_set);
-                $_SESSION['p_id'] = $user['id'];
-                $_SESSION['fname'] = $user['fname'];
+                $_SESSION['d_id'] = $user['id'];
+                $_SESSION['fname_d'] = $user['fname'];
                 
                 header('Location: drive/dashboard.php');
 
