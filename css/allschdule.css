@@ -92,7 +92,7 @@ body{
 
 .boarder .container {
   background-color: lightgrey;
-  width:600px;
+  width:500px;
   float:center;
   word-spacing:2px 1px;
   border: 5px solid black;

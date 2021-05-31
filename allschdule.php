@@ -36,13 +36,12 @@
 			<label>Date</label>
 			<input type="date" name="date">
 		</div>
-	</div><br><br>
+	</div><br><br><br>
 	<center>
-		<button type="button"
-         onclick="document.getElementById('demo').innerHTML = submit">
+		<button type="button">
          Submit</button>
 	</center>
-</div><!-- /search-bus -->
+</div><!-- /search-bus --><br><br>
 
 <h2>Bus Schedule For Colombo To Kegalla On 2021.03.20</h2>
 <hr>

@@ -6,11 +6,11 @@ body{
 	border:2px solid black;
 }
 
-div.center {
+div.line {
   background-color: lightgrey;
-  width: 600px;
+  width: 900px;
   border: 2px solid black;
-  padding: 50px;
+  padding: 100px;
   margin: 50px auto;
 }
 .h2{
@@ -30,27 +30,22 @@ div.center {
 	border: 1px solid #808080;
 }
 
-.select{
-  border: none;
-  color: white;
-  padding:15px 32px;
+.container select{
+  padding:15px 120px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   margin: 5px 2px;
   cursor: pointer;
 
-}  
-.input{
-   font-size:16px;
-   padding:15px 20px;
-   width:100%;
+}
+
+.container input{
+   font-size:15px;
+   padding:15px 90px;
+   width:50px;
    border:0;
    border-radius:5px;
-   outline:none;
-}   
-
+} 
 
 .lable{
 	width: 300px;
@@ -58,3 +53,4 @@ div.center {
 	float: left;
 	
 }
+
