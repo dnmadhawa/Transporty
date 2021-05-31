@@ -1,3 +1,35 @@
+<?php require_once('inc/connection.php');?>
+<?php
+$schedule_list='';
+//Getting the list of activities
+
+$query="SELECT v.v_id , v.b_number, s.d_time, s.a_time, v.s_type, v.seat_count FROM schedule s,vehicle v WHERE v.v_id=s.v_id AND s.depature='Colombo'";
+$schedule= mysqli_query($connection,$query);
+
+if($schdule)
+{
+ while($schdule1 =mysqli_fetch_assoc($schdule))
+ {
+     $schdule_list .= "<tr>";
+     $schdule_list .= "<td>{$schdule1['v_id']}</td>";
+     $schdule_list .= "<td>{$schdule1['b_number']}</td>";
+     $schdule_list .= "<td>{$schdule1['d_time']}</td>";     
+     $schdule_list .= "<td>{$schdule1['a_time']}</td>";     
+     $schdule_list .= "<td>{$schdule1['s_type']}</td>";
+     $schdule_list .= "<td>{$schdule1['seat_count']}</td>";
+     
+     
+
+     $schdule_list .= "</tr>";
+
+
+}
+
+}else{
+    echo "database query failed.";
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,21 +47,35 @@
 		<div class="search-input">
 			<label>Departure</label>
 			<select name="Departure" id="Departure" placeholder="Departure"><!--section option-->
-            <option value="Colombo">Colombo</option>
-            <option value="Monaragala">Monaragala</option>
-            <option value="Kandy">Kandy</option>
+          <option value="Colombo">Colombo</option>
+          <option value="Monaragala">Monaragala</option>
+          <option value="Kandy">Kandy</option>
 	        <option value="Kegalla">Kegalla</option>
 	        <option value="Badulla">Badulla</option>
+          <option value="kaluthara">kaluthara</option>
+          <option value="Galle">Galle</option>
+          <option value="Mathara">Mathara</option>
+          <option value="Madakalapuwa">Madakalapuwa</option>
+          <option value="Ampara">Ampara</option>
+          <option value="Gampaha">Gampaha</option>
+          <option value="Peradeniya">Peradeniya</option>
             </select><!--/section option-->
 		</div>
 		<div class="search-input">
 			<label>Arrival</label>
 			<select name="Arrival" id="Arrival" placeholder="Arrival"><!--section option-->
-            <option value="Colombo">Colombo</option>
-            <option value="Monaragala">Monaragala</option>
-            <option value="Kandy">Kandy</option>
+          <option value="Colombo">Colombo</option>
+          <option value="Monaragala">Monaragala</option>
+          <option value="Kandy">Kandy</option>
 	        <option value="Kegalla">Kegalla</option>
 	        <option value="Badulla">Badulla</option>
+          <option value="kaluthara">kaluthara</option>
+          <option value="Galle">Galle</option>
+          <option value="Mathara">Mathara</option>
+          <option value="Madakalapuwa">Madakalapuwa</option>
+          <option value="Ampara">Ampara</option>
+          <option value="Gampaha">Gampaha</option>
+          <option value="Peradeniya">Peradeniya</option>
             </select><!--/section option-->
 		</div>
 		<div class="search-input">
@@ -96,6 +142,33 @@
  </tr>
  </table> 
 </div>
+
+
+
+
+<main>
+   <span><a href="add-allschdule.php"></a></span>
+    
+    <table class="schedulelist">
+        <tr>
+            <th>Bus id</th>
+            <th>Bus number</th>
+            <th>startingtime</th>
+            <th>Endingtime</th>
+            <th>Service Type</th>
+            <th>Available seats </th>
+            </tr>
+
+        
+<?php echo $schedule_list;?>
+
+</table>
+
+
+</main>
+
+
+
 
   
 <?php include_once'footer.php';?>
