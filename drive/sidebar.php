@@ -24,8 +24,8 @@
 		<ul>
 			<li><a href="dashboard.php"><img class="side-img" src="img/icon/dashboard.svg">Dashboard</a></li>
 			<li><a href="addvehicle.php"><img class="side-img" src="img/icon/bus.svg">Add Vahicle</a></li>
-			<li><a href="account-settings.php"><img class="side-img" src="img/icon/calendar.svg">Schedule</a></li>
-			<li><a href="driversch.php"><img class="side-img" src="img/icon/gears.svg">Account Settings</a></li>
+			<li><a href="driversch.php"><img class="side-img" src="img/icon/calendar.svg">Schedule</a></li>
+			<li><a href="account-settings.php"><img class="side-img" src="img/icon/gears.svg">Account Settings</a></li>
 		</ul>
 	</div><!-- /side-nav -->
 </div>
