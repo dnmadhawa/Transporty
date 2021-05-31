@@ -17,7 +17,7 @@
 <body>
 
 
-	 <?php include_once 'sidebar.php' ?> 
+<?php include_once 'sidebar.php' ?> 
 
 		<div class="container">
 
@@ -26,24 +26,27 @@
 					<hr>
 
 					<div class="formborder" >
-							<form>
+							<form action="addvehicledatabase.php" method="POST" class="vehicleform">
 							
 								<div class="forminfo">
 									<div class="label1">
-										<label> Service Type </label>
+
 										<label> Vehicle ID   </label>
+										<label> Service Type </label>
 										<label> Bus Model 	 </label>
-										<label> Number 		 </label>
+										<label> Bus Number 	</label>
 										<label> Seat Count 	 </label>
 									</div>
 									
 									<div class="input1">
-										<input type= "number" id="number" value="Number">
-										<input type="text" id="bMOdel" placeholder="Bus Model">
-										<input type= "text" id ="vID" placeholder="Vehicle ID">
-										<input type="text" id ="stype" placeholder="Service Type">
-										<input type="number" id="sCount" value="Seat Count">
-										<input class="submit" type="submit" value="Submit">
+
+										<input type= "text"  name="v_id"    placeholder ="Vehicle ID">
+										<input type="text"     name="s_type"    placeholder="Service Type">
+										<input type= "text"    name="b_model"  placeholder="Bus Model">
+										<input type="text"     name="b_num"    placeholder="Bus Number">
+										<input type="number"   name="s_count"  placeholder ="Seat Count">
+
+										<input class="submit" name="submit" type="submit" value="Submit">
 									</div>
 								</div>	
 
