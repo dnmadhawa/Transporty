@@ -1,7 +1,6 @@
 <?php
 require_once('inc/connection.php');
 require_once('driver.php');
-require_once('passenger.php');
 ?>
 
 <dv class="top-nav-bar container"><!-- top-nav-bar -->
@@ -13,9 +12,8 @@ require_once('passenger.php');
 		<img class="user-icon" src="img/user.png">
 		<span class="user-name">
 			<?php 
-				if(isset($_SESSION['p_id'])) {
-						echo $_SESSION['fname'];
-					} else if(isset($_SESSION['d_id'])) {
+				echo $_SESSION['fname'];
+					if(isset($_SESSION['d_id'])) {
 							echo $_SESSION['fname'];
 						} else { echo 'User';}  
 					?>
