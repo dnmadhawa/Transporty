@@ -6,21 +6,21 @@ $schedule_list='';
 $query="SELECT v.v_id , v.b_number, s.d_time, s.a_time, v.s_type, v.seat_count FROM schedule s,vehicle v WHERE v.v_id=s.v_id AND s.depature='Colombo'";
 $schedule= mysqli_query($connection,$query);
 
-if($schdule)
+if($schedule)
 {
- while($schdule1 =mysqli_fetch_assoc($schdule))
+ while($schedule1 =mysqli_fetch_assoc($schedule))
  {
-     $schdule_list .= "<tr>";
-     $schdule_list .= "<td>{$schdule1['v_id']}</td>";
-     $schdule_list .= "<td>{$schdule1['b_number']}</td>";
-     $schdule_list .= "<td>{$schdule1['d_time']}</td>";     
-     $schdule_list .= "<td>{$schdule1['a_time']}</td>";     
-     $schdule_list .= "<td>{$schdule1['s_type']}</td>";
-     $schdule_list .= "<td>{$schdule1['seat_count']}</td>";
+     $schedule_list .= "<tr>";
+     $schedule_list .= "<td>{$schedule1['v_id']}</td>";
+     $schedule_list .= "<td>{$schedule1['b_number']}</td>";
+     $schedule_list .= "<td>{$schedule1['d_time']}</td>";     
+     $schedule_list .= "<td>{$schedule1['a_time']}</td>";     
+     $schdeule_list .= "<td>{$schedule1['s_type']}</td>";
+     $schdeule_list .= "<td>{$schedule1['seat_count']}</td>";
      
      
 
-     $schdule_list .= "</tr>";
+     $schedule_list .= "</tr>";
 
 
 }
@@ -147,7 +147,7 @@ if($schdule)
 
 
 <main>
-   <span><a href="add-allschdule.php"></a></span>
+   <span><a href="add-allschedule.php"></a></span>
     
     <table class="schedulelist">
         <tr>
@@ -157,6 +157,7 @@ if($schdule)
             <th>Endingtime</th>
             <th>Service Type</th>
             <th>Available seats </th>
+
             </tr>
 
         
