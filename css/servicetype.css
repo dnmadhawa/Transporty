@@ -6,10 +6,10 @@ body{
 	border:2px solid black;
 	width:1050px;
 	height:700px;
+	margin: 30px auto;
 }
 
 .menu-bar{
-	background:0,100,0);
 	text-align:left;
 }
 .menu-bar ul{
@@ -31,6 +31,7 @@ body{
 background:#2bab0d;
 border-radius: 3px;
 }	
+
 div.box {
   background-color: lightgray;
   width: 300px;
@@ -49,4 +50,10 @@ div.box {
 	-moz-transition:left 2s;
 	-o-transition:left 2
 
+}
+
+.al-box{
+		margin: auto;
+    display: flex;
+    justify-content: center;
 }
