@@ -3,6 +3,7 @@
 .headings
 {
 	font-size:40px;
+	color: #ff0040;
 }
 
 
@@ -39,16 +40,19 @@
 
 .formbackgrnd
 {
-	background-color:yellow;
+	background-color:white;
 	border:solid white;
-	margin:50px;
+	margin-top:none;
+	margin-bottom: 70px;
+	margin-left: 70px;
+	margin-right: 70px;
 
 }
 
 .abc
 {
-	padding-left:250px;
-	padding-bottom:50px;
+	padding-left:200px;
+	padding-bottom:80px;
 	padding-top:30px;
 }
 
@@ -100,15 +104,55 @@
 	padding:30px;
 }
 
-.formchanger
-{
-	height:900px;
-	width:auto;
-	overflow:hidden;
-	border:solid black;
-}
-
 #a
 {
-	left:500px;
+	display: block;
+}
+
+#b
+{
+	display: none;
+}
+
+#c
+{
+	display: none;
+}
+
+#d
+{
+	display: none;
+}
+
+.butchange {
+  background-color: #80bfff;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  margin: none;
+
+}
+
+.butchange:hover {
+  background-color: #263194;
+  color: white;
+
+
+}
+
+.hcolor:hover
+{
+  background-color: #fc3503;
+  color: white;
+}
+
+.butchangemarg
+{
+	margin-left: 70px;
+	margin-bottom: none;
+	margin-top: 30px;
 }

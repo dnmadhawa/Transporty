@@ -4,23 +4,29 @@
 	<head>
 	
 		<link type="text/css" rel="stylesheet" href="css/payment.css">
-		<script src="js/payment.js"></script>
-
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+																																															
 	</head>
 	
 	<body>
+
+		<?php include_once 'header.php';?>
 		
 		
 		<div class="formchanger">
+
+
+			<div class="butchangemarg">
 		
-			<button type="button"  onclick="form1()">Visa/Master</button>
-			<button  type="button"  onclick="form2()" >Genie</button>
-			<button  type="button"   onclick="form3()" >eZ Cash</button>
-			<button  type="button"  onclick="form4()">PayPal</button>
+				<button  class="butchange" type="button"  onclick="form1()">Visa/Master</button>
+				<button  class="butchange" type="button"  onclick="form2()" >Genie</button>
+				<button  class="butchange" type="button"   onclick="form3()" >eZ Cash</button>
+				<button  class="butchange" type="button"  onclick="form4()">PayPal</button>
+
+			</div>
 			
 			
-			
-			<div class="formbackgrnd" id ="a" >
+			<div class="formbackgrnd" id ="a">
 			
 				<form class="abc">
 				
@@ -80,7 +86,7 @@
 						<input type="number" placeholder="1234567">
 					</div>
 					
-					<button class="buttons">Pay</button>
+					<button class="buttons hcolor" >Pay</button>
 					
 				
 				
@@ -117,7 +123,7 @@
 						<input type="number" placeholder="Mobile Number"><br>
 						</div>
 												
-						<button class="buttons">Pay</button>
+						<button class="buttons hcolor">Pay</button>
 					
 					</form>
 			
@@ -144,8 +150,8 @@
 							
 							</div>
 												
-							<button class="buttons">Reset</button>
-							<button class="buttons submit">Submit</button>
+							<button class="buttons hcolor">Reset</button>
+							<button class="buttons submit hcolor">Submit</button>
 							
 					</form>
 					
@@ -175,7 +181,7 @@
 						
 					</div>		
 					
-					<button class="buttons">Continue to PayPal</button>
+					<button class="buttons hcolor">Continue to PayPal</button>
 							
 				</form>
 				
@@ -183,7 +189,11 @@
 			</div>
 	
 	
-	</div>
+		</div>
+
+		<?php include_once 'footer.php';?>
+
+	<script src="js/payment.js"></script>
 	</body>
 
 </html>
