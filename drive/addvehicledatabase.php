@@ -11,7 +11,7 @@ $query="INSERT INTO `vehicle` (`v_id`, `s_type`, `bus_model`, `b_number`, `seat_
 
 if(mysqli_query($connection,$query))
 {
-	echo"Success";
+	header('Location:addvehicle.php');
 }
 else
 {
