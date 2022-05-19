@@ -1,0 +1,49 @@
+body{
+	background-color: #ecf0f1;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	border:2px solid black;
+	width: 1400px;
+
+}
+.head hr{
+	border:3px solid black;
+
+}
+.activitylist tr:nth-child(odd){
+	background-color: lightblue;
+
+}
+
+main{
+	width: 1000px;
+	margin: 30px auto;
+
+}
+main h1{
+	margin-bottom: 20px;
+	font-size: 50px;
+}
+main h1 span{
+	font-size: 20px;
+}
+table.activitylist{
+	width: 1000px;
+	border-style: groove;
+
+
+
+}
+table.activitylist th{
+    background-color: lightblue;
+    width: 70px;
+}
+table.activitylist th,table.activitylist td{
+	padding: 10px;
+	border-style: groove;
+
+}
+table.activitylist td button{
+	background-color: lightblue
+}
+

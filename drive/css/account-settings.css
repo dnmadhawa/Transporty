@@ -1,0 +1,93 @@
+.con-body{
+	background-color: #ffff;
+	padding: 30px;
+	margin: 40px;
+}
+
+.user-data{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.user-img{
+	width: 200px;
+}
+
+.user-ps{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.user-ids{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.user-ids h4, .user-ids p{
+	margin: 10px 5px;
+}
+
+.user-details{
+	width: 60%;
+}
+
+.us-data{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.us-label{
+	display: flex;
+	align-items: center;
+	width: 40%;
+	margin: 10px;
+}
+
+.us-input{
+	width: 60%;
+	margin: 10px;
+}
+
+.us-input input{
+	border-radius: 6px;
+	height: 25px;
+	width: 350px;
+}
+
+.btn input{
+	float: left;
+	width: 90px;
+	height: 35px;
+	color: #ffff;
+	border: none;
+	background-color: #205cc1;
+	border-radius: 6px;
+	margin: 10px;
+}
+
+.readonly input{
+	background-color: #cccc;
+}
+
+.success{
+	background-color: #205cc196;
+	margin: 10px 40px;
+	margin-bottom: -30px;
+	color: #fff;
+	padding: 10px;
+}
+
+.error{
+	background-color: #c1202096;
+	margin: 10px 40px;
+	margin-bottom: -30px;
+	color: #fff;
+	padding: 10px;
+}

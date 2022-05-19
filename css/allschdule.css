@@ -1,0 +1,133 @@
+body{
+	background-color: #ecf0f1;
+	font-family: Arial, sans-serif;
+}
+.boarder{
+	border:2px solid black;
+	width:900px;
+	height:700px;
+	margin: 50px auto;
+}
+
+.boarder .container{
+	width: 1400px;
+	display: block;
+	margin: auto;
+	clear: both;
+}
+
+.boarder .logo img{
+	width: 250px;
+	float: left;
+}
+.boarder .login{
+	display: flex;
+	float: right;
+	align-items: center;
+}
+.boarder .login input{
+	height: 30px;
+	margin: 0 10px;
+	background-color: #205cc1;
+	color: #fff;
+	border-radius: 5px;
+	border-color: transparent;
+	width: 60px;  
+}
+.boarder .login img{
+	width: 50px;
+}
+
+.boarder .nav-bar{
+	background-color: #205cc1;
+	height: 50px;
+}
+.boarder .manu{
+
+	float: left;
+	list-style: none;
+	padding-left: 0;
+
+}
+.boarder .manu li{
+	display: inline;
+	padding: 10px;
+	color: #fff;
+}
+.boarder .manu a{
+	color: #ffff;
+	text-decoration: none;
+}
+	  
+.boarder .search-box{
+	padding: 10px;
+	float: left;
+}
+
+.boarder .search-box input{
+	position: relative;
+	height: 24px;
+	padding-left: 30px;
+	border-radius: 20px;
+	border-color: transparent;
+	width: 200px;
+	transition: width 0.5s;
+}
+
+.boarder .search-box input:focus{
+	outline: none !important;
+	width: 250px;
+}
+
+.boarder .search-box input:visited{
+	border-color: transparent;
+}
+
+.boarder .search-box img{
+	position: absolute;
+	width: 15px;
+	transform: translate(8px,8px);
+	z-index: 1;
+}
+
+.boarder .container {
+  background-color: lightgrey;
+  width:500px;
+  float:center;
+  word-spacing:2px 1px;
+  border: 5px solid black;
+  padding: 50px;
+  margin: 20px auto;
+}
+
+.boarder .search-input{
+	float:left;
+	margin: 10px;
+}
+
+.b-schedule{
+	margin: 20px auto;
+}
+
+.b-schedule th{
+	background:#808080;
+	padding:15px;
+	font-size:15px;
+	border:2px solid black;
+}
+.b-schedule , td{
+	width:800px;
+	table-layout: fixed;
+	font-size:13px;
+	padding: 15px;
+	text-align:center;
+	border:2px solid black;
+	border-collapse:collapse;
+	background: #c0c0c0;
+	color:white;
+	font-weight:700;
+}
+.test:hover{
+	background:#4682B4;
+}
+	

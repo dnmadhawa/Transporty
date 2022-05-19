@@ -1,0 +1,153 @@
+
+
+
+input:focus{
+	outline: none !important;
+}
+
+.slider{
+	position: relative;
+	margin: 60px auto;
+}
+
+.slide{
+	display: none;
+	-webkit-animation: fadeIn 1.5s;
+    animation: fadeIn 1.5s;
+	width: 900px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+.slider-btn{
+	background-color: transparent;
+	border-color: transparent;
+	width: 40px;
+}
+
+.slider-btn img:hover{
+	transition: 0.5s;
+	width: 50px;
+}
+
+.slider-btn img{	
+	width: 40px;
+}
+
+.previous-btn{
+	position: absolute;
+	transform: translate(-550px,-210px);
+}
+
+.next-btn{
+	position: absolute;
+	transform: translate(480px,-210px);
+}
+
+.search-bus{
+	width: 100%;
+	margin-top: 40px;
+	padding: 30px 0;
+	background-color: #ffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search-input select , .search-input input{
+	margin-top: 10px;
+	width: 274px;
+	height: 40px;
+	border-radius: 6px;
+	border: 2px solid  #9f9c9c;
+	padding:0 10px;
+}
+
+.search-input input{
+	height: 36px;
+	width: 250px;
+}
+
+.search-col{
+	display: flex;
+	justify-content: space-around;
+}
+
+.search-col label{
+	color: #414141;
+	font-weight: 600;
+}
+
+.search-input{
+	display: flex;
+	flex-direction: column;
+}
+
+.search-header h1{
+	margin-top: 0;
+}
+
+.bus-btn{
+	padding: 0 10px;
+	height: 40px;
+	margin-top: 30px;
+	border-radius: 6px;
+	border: 2px solid  #414141;
+	background-color: #205cc1;
+	color: #fff;
+	border: none;
+}
+
+.bus-btn:hover{
+	background-color: #2771ec;
+}
+
+.st-header hr{
+	border:  solid #565555;
+}
+
+.st-header{
+	color: #414141;
+	margin-bottom: 30px;
+}
+
+.st-header h1{
+	margin-bottom: 5px;
+}
+
+.service-type{
+	margin: 60px auto;
+}
+
+.service-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.box{
+	background-color: #fff;
+	width: 25%;
+	box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+	color: #414141;
+}
+
+.box h2{
+	display: flex;
+	justify-content: center;
+	margin: 15px auto;
+}
+
+.box ul{
+	margin: 25px auto;
+	margin-bottom: 40px;
+}
+
+.box li{
+	margin: 10px;
+	font-size: 16px;
+}
+
+
